@@ -3,10 +3,10 @@ from bs4 import BeautifulSoup
 
 all_variants_data = []
 
-
-def variant_data(variant_name, url, headers):
+def variant_data(variant_name, url, headers, price):
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, 'html.parser')
+    
     specs_div = soup.find("div", {"id": "scrollDiv"})
     if not specs_div:
         print(f"Div not found for {variant_name}!")
@@ -33,18 +33,16 @@ def variant_data(variant_name, url, headers):
                 fields.append(field)
                 values.append("")
             i += 1
-    # Create a dictionary with fields as keys and values as their corresponding values
-    variant_data = {"variant": variant_name}
+
+    # Store price along with other data
+    variant_data = {"variant": variant_name, "price": price}
     for f, v in zip(fields, values):
         variant_data[f] = v
 
     all_variants_data.append(variant_data)
     return all_variants_data
 
-
 def clean_data(specs_div):
-
-    # Replace check and cross icons with 'yes' and 'no'
     for check_icon in specs_div.select("i.icon-check"):
         check_icon.replace_with("yes")
     for cross_icon in specs_div.select("i.icon-deletearrow"):
@@ -63,8 +61,12 @@ def clean_data(specs_div):
         "Don't miss out on the best offers for this Month",
         "Check January Offers",
         "Check February Offers",
-        "View Complete Offers"
+        "View Complete Offers",
+        "View Holi Offers",
+        "View March Offers",
+        "View April Offers",
     }
+
 
     rows = text_content.split("\n")
     rows = [r.strip() for r in rows if r.strip()]
