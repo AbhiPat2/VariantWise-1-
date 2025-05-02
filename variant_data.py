@@ -3,10 +3,11 @@ from bs4 import BeautifulSoup
 
 all_variants_data = []
 
+
 def variant_data(variant_name, url, headers, price):
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, 'html.parser')
-    
+
     specs_div = soup.find("div", {"id": "scrollDiv"})
     if not specs_div:
         print(f"Div not found for {variant_name}!")
@@ -42,6 +43,7 @@ def variant_data(variant_name, url, headers, price):
     all_variants_data.append(variant_data)
     return all_variants_data
 
+
 def clean_data(specs_div):
     for check_icon in specs_div.select("i.icon-check"):
         check_icon.replace_with("yes")
@@ -56,6 +58,7 @@ def clean_data(specs_div):
         "Safety", "Entertainment & Communication", "ADAS Feature", "Advance Internet Feature"
     ]
 
+# Add any unwanted offer texts here you see on the webite's specs page to get clean data
     unwanted_lines = {
         "Report Incorrect Specs",
         "Don't miss out on the best offers for this Month",
@@ -65,8 +68,15 @@ def clean_data(specs_div):
         "View Holi Offers",
         "View March Offers",
         "View April Offers",
+        "View May Offers",
+        "View June Offers",
+        "View July Offers",
+        "View August Offers",
+        "View September Offers",
+        "View October Offers",
+        "View November Offers",
+        "View December Offers",
     }
-
 
     rows = text_content.split("\n")
     rows = [r.strip() for r in rows if r.strip()]
@@ -79,6 +89,7 @@ def clean_data(specs_div):
         if line in unwanted_lines:
             i += 1
             continue
+        # cleaning some exceptions while scraping
         if line.lower() == 'no' and (i + 1 < len(rows)) and rows[i + 1].strip() == 'Transmission Type':
             i += 1
             continue
