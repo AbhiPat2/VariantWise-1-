@@ -45,7 +45,7 @@ for brand, models in car_models.items():
             if all_variants_data:
                 df = pd.DataFrame(all_variants_data)
                 df = df.drop_duplicates()
-                df.to_csv(f"../data/{brand}-{model}.csv", index=False)
+                df.to_csv(f"../data/specs/{brand}-{model}.csv", index=False)
                 print(f"{brand}-{model}.csv created successfully.")
             else:
                 print(f"No data found for {brand} {model}")
