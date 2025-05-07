@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 93%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 0% 93%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 0 0% 85%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 0%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 0% 20%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Interactive text elements */
+.interactive-text {
+  @apply transition-all duration-200 ease-in-out;
+}
+
+.interactive-text:hover {
+  @apply text-primary-300 scale-105 cursor-pointer;
+}
+
+/* Enhanced button hover effects */
+.btn-hover-effect {
+  @apply relative overflow-hidden transition-all duration-300 ease-in-out;
+}
+
+.btn-hover-effect::after {
+  content: "";
+  @apply absolute inset-0 bg-white opacity-0 transition-opacity duration-300 ease-in-out;
+}
+
+.btn-hover-effect:hover::after {
+  @apply opacity-20;
+}
+
+.dark .btn-hover-effect::after {
+  @apply bg-white;
+}
+
+/* Custom gradient backgrounds */
+.bg-dark-gradient {
+  @apply bg-gradient-to-r from-primary-500 to-primary-400;
+}
+
+.bg-light-gradient {
+  @apply bg-gradient-to-r from-primary-300 to-primary-200;
+}
+
