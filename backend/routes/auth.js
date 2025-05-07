@@ -120,9 +120,7 @@ router.get(
 
       // Wait for session to save before redirecting
       req.session.save(() => {
-        res.redirect(
-          `${process.env.FRONTEND_URL || "http://localhost:3000"}/dashboard`
-        );
+        res.redirect(`${process.env.FRONTEND_URL || "http://localhost:3000"}/`);
       });
     } catch (err) {
       console.error("Google callback error:", err);

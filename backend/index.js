@@ -5,7 +5,6 @@ const passport = require("passport");
 const app = express();
 require("dotenv").config();
 require("./db/config");
-const responseRoutes = require("./routes/response");
 const authRoutes = require("./routes/auth");
 
 const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:3000";
@@ -46,8 +45,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-// --- Routes ---
-app.use("/", responseRoutes);
+// --- Route ---
 app.use("/api", authRoutes);
 
 // --- Server Start ---
