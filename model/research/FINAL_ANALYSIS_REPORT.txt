@@ -1,0 +1,273 @@
+======================================================================
+LOADING BENCHMARK RESULTS
+======================================================================
+File: results/benchmark_results_20260124_102525.json
+
+Test Cases: 100
+Completed: 2026-01-24T10:25:25.017399
+Duration: 45.6 minutes
+
+======================================================================
+RECOMMENDATION SYSTEM ANALYSIS
+======================================================================
+
+Success Rate: 100/100 (100.0%)
+Total Cars Recommended: 500
+
+Overall Quality:
+  Mean:   0.5321
+  Median: 0.5105
+  Std:    0.0804
+  Range:  [0.3010, 0.6810]
+  Distribution:
+    Excellent (>0.8): 0 (0.0%)
+    Good (0.6-0.8): 24 (24.0%)
+    Moderate (0.4-0.6): 70 (70.0%)
+    Poor (<=0.4): 6 (6.0%)
+
+Relevance Score:
+  Mean:   0.6280
+  Median: 0.6205
+  Std:    0.1189
+  Range:  [0.3850, 0.9230]
+  Distribution:
+    Excellent (>0.8): 5 (5.0%)
+    Good (0.6-0.8): 50 (50.0%)
+    Moderate (0.4-0.6): 43 (43.0%)
+    Poor (<=0.4): 2 (2.0%)
+
+Diversity Score:
+  Mean:   0.2765
+  Median: 0.2745
+  Std:    0.0785
+  Range:  [0.1650, 0.4650]
+  Distribution:
+    Excellent (>0.8): 0 (0.0%)
+    Good (0.6-0.8): 0 (0.0%)
+    Moderate (0.4-0.6): 10 (10.0%)
+    Poor (<=0.4): 90 (90.0%)
+
+Llm Overall:
+  Mean:   0.5796
+  Median: 0.5000
+  Std:    0.2007
+  Range:  [0.0200, 0.9250]
+
+Response Time:
+  Mean:   1.9118
+  Median: 1.9221
+  Std:    0.2303
+  Range:  [1.2823, 2.6353]
+
+Advanced Ndcg:
+  Mean:   0.9962
+  Median: 1.0000
+  Std:    0.0209
+  Range:  [0.8083, 1.0000]
+
+Advanced Ild:
+  Mean:   0.1640
+  Median: 0.1458
+  Std:    0.1148
+  Range:  [0.0079, 0.5199]
+
+Advanced Novelty:
+  Mean:   0.3312
+  Median: 0.3000
+  Std:    0.1906
+  Range:  [0.0000, 0.8000]
+
+Advanced Serendipity:
+  Mean:   0.2318
+  Median: 0.2100
+  Std:    0.1334
+  Range:  [0.0000, 0.5600]
+
+Car Recommendation Analysis:
+
+  Top 10 Most Recommended:
+    7x Mahindra Bolero Neo Plus P4
+    6x Citroen Aircross You
+    6x Mahindra BE 6 Pack One
+    6x Citroen Aircross Turbo Plus 7 Seater
+    6x Citroen Aircross Turbo Plus
+    6x Tata Safari Accomplished Plus Dark
+    5x Citroen Aircross Plus
+    5x Mahindra Bolero Neo Plus P10
+    5x Citroen Aircross Turbo Plus AT
+    5x Citroen Aircross Turbo Max
+
+  Fuel Type Distribution:
+    Petrol: 223 (44.6%)
+    Diesel: 158 (31.6%)
+    CNG: 63 (12.6%)
+    Electric: 56 (11.2%)
+
+  Body Type Distribution:
+    SUV: 262 (52.4%)
+    Sedan: 69 (13.8%)
+    Hatchback: 57 (11.4%)
+    MPV: 55 (11.0%)
+    Compact SUV: 53 (10.6%)
+    Pickup: 4 (0.8%)
+
+======================================================================
+Q&A SYSTEM ANALYSIS
+======================================================================
+
+Total Questions: 300
+Success Rate: 300/300 (100.0%)
+Hallucination Rate: 0/300 (0.0%)
+
+Overall Quality:
+  Mean:   0.7564
+  Median: 0.8135
+  Std:    0.1754
+  Range:  [0.1240, 0.9580]
+  Distribution:
+    Excellent (>0.8): 162 (54.0%)
+    Good (0.6-0.8): 89 (29.7%)
+    Moderate (0.4-0.6): 32 (10.7%)
+    Poor (<=0.4): 17 (5.7%)
+
+Llm Overall:
+  Mean:   0.8473
+  Median: 0.9550
+  Std:    0.2475
+  Range:  [0.0000, 1.0000]
+  Distribution:
+    Excellent (>0.8): 228 (76.0%)
+    Good (0.6-0.8): 31 (10.3%)
+    Moderate (0.4-0.6): 24 (8.0%)
+    Poor (<=0.4): 17 (5.7%)
+
+Relevance Score:
+  Mean:   0.5435
+  Median: 0.6000
+  Std:    0.2178
+  Range:  [0.0000, 0.8330]
+  Distribution:
+    Excellent (>0.8): 10 (3.3%)
+    Good (0.6-0.8): 123 (41.0%)
+    Moderate (0.4-0.6): 72 (24.0%)
+    Poor (<=0.4): 95 (31.7%)
+
+Groundedness Score:
+  Mean:   0.3393
+  Median: 0.2790
+  Std:    0.2634
+  Range:  [0.0000, 0.9840]
+  Distribution:
+    Excellent (>0.8): 20 (6.7%)
+    Good (0.6-0.8): 36 (12.0%)
+    Moderate (0.4-0.6): 50 (16.7%)
+    Poor (<=0.4): 194 (64.7%)
+
+Response Time:
+  Mean:   6.8129
+  Median: 3.5490
+  Std:    36.2508
+  Range:  [1.8062, 630.4427]
+  Speed Distribution:
+    Very Fast (<3s): 90 (30.0%)
+    Fast (3-5s): 116 (38.7%)
+    Moderate (5-10s): 76 (25.3%)
+    Slow (>10s): 18 (6.0%)
+
+Answer Length:
+  Mean:   112.1100
+  Median: 79.5000
+  Std:    87.3573
+  Range:  [8.0000, 418.0000]
+
+Question Pattern Analysis:
+  What: 102 (34.0%)
+  Which: 85 (28.3%)
+  How: 41 (13.7%)
+  Other: 30 (10.0%)
+  Tell: 22 (7.3%)
+  Are/Do/Does: 20 (6.7%)
+
+======================================================================
+PERSONA-WISE ANALYSIS
+======================================================================
+
+Total Personas: 20
+
+Persona                                       Tests   Rec Qual   Diversity  Q&A Qual  
+------------------------------------------------------------------------------------------
+Status-conscious buyer                        5       0.609      0.304      0.819     
+Growing family with kids                      3       0.593      0.273      0.672     
+Long-distance highway driver                  6       0.569      0.307      0.762     
+Adventure/off-road enthusiast                 4       0.562      0.258      0.776     
+Budget-conscious first-time buyer             10      0.562      0.297      0.749     
+Safety-focused family person                  7       0.546      0.312      0.782     
+Practical daily commuter                      5       0.545      0.225      0.777     
+Ride-sharing driver                           6       0.541      0.226      0.742     
+College student on tight budget               9       0.538      0.307      0.744     
+Business executive                            3       0.538      0.226      0.806     
+Resale value focused buyer                    3       0.535      0.177      0.758     
+Senior citizen looking for comfort            8       0.524      0.257      0.748     
+Weekend road-tripper                          3       0.521      0.343      0.828     
+Luxury comfort seeker                         5       0.508      0.282      0.800     
+Performance enthusiast                        3       0.500      0.264      0.708     
+Retired couple                                3       0.496      0.252      0.515     
+Young professional                            5       0.495      0.286      0.805     
+Tech-savvy millennial                         7       0.475      0.281      0.759     
+Eco-conscious buyer                           3       0.456      0.328      0.709     
+City driver with parking concerns             2       0.395      0.200      0.782     
+
+======================================================================
+SAMPLE USER PREFERENCES BY PERSONA
+======================================================================
+
+Top 5 Performing Personas:
+
+Status-conscious buyer (Quality: 0.609):
+  Budget: ₹1,200,000-₹1,800,000, Fuel: Electric, Body: SUV, Seats: 7
+
+Growing family with kids (Quality: 0.593):
+  Budget: ₹1,200,000-₹1,800,000, Fuel: Any, Body: SUV, Seats: 7
+
+Long-distance highway driver (Quality: 0.569):
+  Budget: ₹500,000-₹800,000, Fuel: Any, Body: Sedan, Seats: 8
+
+Adventure/off-road enthusiast (Quality: 0.562):
+  Budget: ₹1,500,000-₹2,000,000, Fuel: CNG, Body: Hatchback, Seats: 7
+
+Budget-conscious first-time buyer (Quality: 0.562):
+  Budget: ₹1,800,000-₹2,500,000, Fuel: Electric, Body: Any, Seats: 5
+
+
+Bottom 5 Performing Personas:
+
+Retired couple (Quality: 0.496):
+  Budget: ₹600,000-₹1,000,000, Fuel: Hybrid, Body: Any, Seats: 5
+
+Young professional (Quality: 0.495):
+  Budget: ₹1,000,000-₹1,500,000, Fuel: Diesel, Body: SUV, Seats: 7
+
+Tech-savvy millennial (Quality: 0.475):
+  Budget: ₹1,800,000-₹2,500,000, Fuel: Hybrid, Body: SUV, Seats: 8
+
+Eco-conscious buyer (Quality: 0.456):
+  Budget: ₹2,500,000-₹4,000,000, Fuel: Electric, Body: Crossover, Seats: 7
+
+City driver with parking concerns (Quality: 0.395):
+  Budget: ₹1,500,000-₹2,000,000, Fuel: Electric, Body: Sedan, Seats: 5
+
+======================================================================
+KEY INSIGHTS & RECOMMENDATIONS
+======================================================================
+
+1. ⚠️  Recommendation quality is MODERATE (0.532). Room for improvement.
+2. ⚠️  Diversity is LOW (0.277). Users see too similar cars.
+3. ✓ NDCG@K is good (0.996). Ranking quality is solid.
+4. ⚠️  ILD (diversity) is LOW (0.164). Recommendations too similar.
+5. ✓ Novelty is acceptable (0.331).
+6. ✓ Q&A quality is EXCELLENT (0.756).
+7. ⚠️  18 Q&A responses took >10s. Consider caching.
+
+======================================================================
+
+✓ Analysis Complete!

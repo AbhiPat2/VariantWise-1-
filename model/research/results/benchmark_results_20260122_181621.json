@@ -1,0 +1,618 @@
+{
+  "metadata": {
+    "completed_at": "2026-01-22T18:16:21.649621",
+    "total_tests": 5,
+    "total_time_seconds": 133.923495054245,
+    "total_time_minutes": 2.232058250904083,
+    "avg_time_per_test": 26.784699010849
+  },
+  "results": [
+    {
+      "test_id": 1,
+      "persona": "Eco-conscious buyer",
+      "preferences": {
+        "min_budget": 500000,
+        "max_budget": 800000,
+        "fuel_type": "Any",
+        "body_type": "MUV",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "HUD",
+          "Sunroof",
+          "Leather Seats",
+          "Premium Audio"
+        ],
+        "performance": 2
+      },
+      "timestamp": "2026-01-22T18:14:07.725359",
+      "recommendation_results": {
+        "success": true,
+        "num_recommendations": 5,
+        "response_time": 2.3572239875793457,
+        "quality_metrics": {
+          "diversity_score": 0.397,
+          "error": "No JSON found in response",
+          "evaluation_method": "llm_hybrid",
+          "llm_available": true,
+          "llm_overall": 0.5,
+          "num_recommendations": 5,
+          "overall_quality": 0.511,
+          "performance_score": 1.0,
+          "relevance_score": 0.415,
+          "response_time": 0.31
+        },
+        "session_id": "5517917910788779659"
+      },
+      "qa_results": [
+        {
+          "question": "What comfort features are available?",
+          "answer": " The comfort features available in the cars mentioned are:\n\n1. Tata Punch Adventure S: Sunroof, Seats: 5.0, Power: 87bhp, Comfort Score: 3.5/5\n2. Hyundai Aura S: None, Seats: 5.0, Power: 82bhp, Comfort Score: 3.5/5\n3. Citroen C3 Puretech 82 Live: None, Seats: 5.0, Power: 80bhp, Comfort Score: 3.25/5\n4. Hyundai Exter S: Apple CarPlay/Android Auto, Seats: 5.0, Power: 81bhp, Comfort Score: 3.5/5\n5. Hyundai Exter S Plus: Apple CarPlay/Android Auto, Seats: 5.0, Power: 81bhp, Comfort Score: 3.5/5\n6. Hyundai Aura E: None, Seats: 5.0, Power: 82bhp, Comfort Score: 3.0/5\n7. Citroen C3 Puretech 82 Feel: None, Seats: 5.0, Power: 80bhp, Comfort Score: 3.5/5\n8. Hyundai Aura S Corporate: None, Seats: 5.0, Power: 82bhp, Comfort Score: 3.5/5\n9. Hyundai Grand i10 Nios Corporate: None, Seats: 5.0, Power: 82bhp, Comfort Score: 3.5/5\n10. Hyundai Grand i10 Nios Magna CNG: None, Seats: 5.0, Power: 68bhp, Comfort Score: 3.5/5\n\nPlease note that the comfort score is provided for reference and may not be an actual feature in the car. Other comfort features such as air conditioning, power steering, and adjustable seats are typically standard in these vehicles.",
+          "response_time": 15.355129957199097,
+          "quality_metrics": {
+            "answer_length": 183,
+            "evaluation_method": "llm_hybrid",
+            "groundedness_score": 0.543,
+            "hallucinated_parts": "none",
+            "hallucination_confidence": 1.0,
+            "hallucination_detected": false,
+            "hallucination_explanation": "The answer is a factual summary of the comfort features mentioned in the context.",
+            "length_score": 1.0,
+            "llm_accuracy": 1.0,
+            "llm_available": true,
+            "llm_completeness": 1.0,
+            "llm_groundedness": 1.0,
+            "llm_helpfulness": 1.0,
+            "llm_overall": 1.0,
+            "llm_reasoning": "The answer directly lists the comfort features available in each car mentioned in the context.",
+            "llm_relevance": 1.0,
+            "overall_quality": 0.905,
+            "relevance_score": 0.667,
+            "response_time": 13.64
+          },
+          "success": true
+        },
+        {
+          "question": "What are the pros and cons of each?",
+          "answer": " Here are the pros and cons of each car based on the provided context:\n\nTata Punch Adventure S:\nPros:\n- Sunroof feature\n- Good power with 87bhp\n- Affordable price\n\nCons:\n- No other notable cons mentioned in the context\n\nHyundai Aura S:\nPros:\n- Competitively priced\n- Decent power with 82bhp\n\nCons:\n- No features mentioned in the context\n\nCitroen C3 Puretech 82 Live:\nPros:\n- Affordable price\n- Decent power with 80bhp\n\nCons:\n- No features mentioned in the context\n\nHyundai Exter S and Hyundai Exter S Plus:\nPros:\n- Competitively priced\n- Decent power with 81bhp\n- Features Apple CarPlay/Android Auto\n\nCons:\n- No other notable cons mentioned in the context\n\nHyundai Aura E:\nPros:\n- Competitively priced\n- Decent power with 82bhp\n\nCons:\n- No features mentioned in the context\n\nCitroen C3 Puretech 82 Feel:\nPros:\n- Affordable price\n- Decent power with 80bhp\n\nCons:\n- No features mentioned in the context\n\nHyundai Aura S Corporate:\nPros:\n- Competitively priced\n- Decent power with 82bhp\n\nCons:\n- No features mentioned in the context\n\nHyundai Grand i10 Nios Corporate:\nPros:\n- Competitively priced\n- Decent power with 82bhp\n\nCons:\n- No features mentioned in the context\n\nHyundai Grand i10 Nios Magna CNG:\nPros:\n- Runs on CNG, an eco-friendly and cost-effective fuel option\n- Decent power with 68bhp\n\nCons:\n- No other notable cons mentioned in the context",
+          "response_time": 15.053719997406006,
+          "quality_metrics": {
+            "answer_length": 231,
+            "evaluation_method": "llm_hybrid",
+            "groundedness_score": 0.683,
+            "hallucinated_parts": "none",
+            "hallucination_confidence": 1.0,
+            "hallucination_detected": false,
+            "hallucination_explanation": "The answer is based on the facts provided in the context and does not contain any unsupported claims or information.",
+            "length_score": 0.866,
+            "llm_accuracy": 1.0,
+            "llm_available": true,
+            "llm_completeness": 1.0,
+            "llm_groundedness": 1.0,
+            "llm_helpfulness": 1.0,
+            "llm_overall": 1.0,
+            "llm_reasoning": "The answer directly and accurately lists the pros and cons of each car based on the provided context. It is complete as it covers all the cars mentioned in the context and is helpful as it provides necessary information for users to make an informed decision. The answer is grounded as it is based on the context provided.",
+            "llm_relevance": 1.0,
+            "overall_quality": 0.93,
+            "relevance_score": 0.8,
+            "response_time": 12.92
+          },
+          "success": true
+        },
+        {
+          "question": "What is the price difference between these options?",
+          "answer": " Here are the prices of the cars you mentioned:\n\n1. Tata Punch Adventure S: Rs. 7,71,990\n2. Hyundai Aura S: Rs. 7,38,200\n3. Citroen C3 Puretech 82 Live: Rs. 6,16,000\n4. Hyundai Exter S: Rs. 7,73,190\n5. Hyundai Exter S Plus: Rs. 7,93,190\n6. Hyundai Aura E: Rs. 6,54,100\n7. Citroen C3 Puretech 82 Feel: Rs. 7,47,000\n8. Hyundai Aura S Corporate: Rs. 7,48,190\n9. Hyundai Grand i10 Nios Corporate: Rs. 7,09,100\n10. Hyundai Grand i10 Nios Magna CNG: Rs. 7,75,000\n\nThe price difference between these options varies. To find the price difference between any two options, you can simply subtract the price of one option from the price of the other. For example, the price difference between the Hyundai Aura S and the Hyundai Exter S is:\n\nHyundai Exter S price - Hyundai Aura S price = Rs. 7,73,190 - Rs. 7,38,200 = Rs. 34,990\n\nYou can use this formula to find the price difference between any two options in the list.",
+          "response_time": 12.595964193344116,
+          "quality_metrics": {
+            "answer_length": 163,
+            "error": "No JSON found in response",
+            "evaluation_method": "llm_hybrid",
+            "groundedness_score": 0.48,
+            "hallucination_detected": false,
+            "length_score": 1.0,
+            "llm_accuracy": 1.0,
+            "llm_available": true,
+            "llm_completeness": 1.0,
+            "llm_groundedness": 1.0,
+            "llm_helpfulness": 1.0,
+            "llm_overall": 1.0,
+            "llm_reasoning": "The answer directly provides the price differences between the mentioned cars based on the context.",
+            "llm_relevance": 1.0,
+            "overall_quality": 0.914,
+            "relevance_score": 0.8,
+            "response_time": 11.13
+          },
+          "success": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "test_id": 2,
+      "persona": "City driver with parking concerns",
+      "preferences": {
+        "min_budget": 600000,
+        "max_budget": 1000000,
+        "fuel_type": "Petrol",
+        "body_type": "Crossover",
+        "transmission": "Any",
+        "seating": 5,
+        "features": [
+          "ISOFIX",
+          "ABS"
+        ],
+        "performance": 1
+      },
+      "timestamp": "2026-01-22T18:14:58.097292",
+      "recommendation_results": {
+        "success": true,
+        "num_recommendations": 5,
+        "response_time": 2.049851179122925,
+        "quality_metrics": {
+          "diversity_score": 0.287,
+          "error": "No JSON found in response",
+          "evaluation_method": "llm_hybrid",
+          "llm_available": true,
+          "llm_overall": 0.5,
+          "num_recommendations": 5,
+          "overall_quality": 0.542,
+          "performance_score": 1.0,
+          "relevance_score": 0.639,
+          "response_time": 0.22
+        },
+        "session_id": "7861322478522020286"
+      },
+      "qa_results": [
+        {
+          "question": "What is the mileage of these cars?",
+          "answer": " Here are the claimed fuel efficiencies of the cars in the context:\n\n- Citroen Aircross Plus: 17.2 kmpl\n- Citroen Aircross You: 17.2 kmpl\n- Citroen Basalt Plus: 17.2 kmpl\n- Citroen Basalt You: 17.2 kmpl\n- Hyundai Aura SX Option: 19.4 kmpl\n- Hyundai Aura SX: 19.4 kmpl\n- Hyundai Aura SX Plus AMT: 18.9 kmpl\n- Hyundai Aura E: 19.4 kmpl\n- Citroen C3 Puretech 110 Shine DT: 20.1 kmpl\n- Citroen C3 Puretech 82 Shine: 20.1 kmpl\n\nPlease note that these are claimed fuel efficiencies and real-world mileage may vary.",
+          "response_time": 8.968589067459106,
+          "quality_metrics": {
+            "answer_length": 93,
+            "error": "No JSON found in response",
+            "evaluation_method": "llm_hybrid",
+            "groundedness_score": 0.512,
+            "hallucination_detected": false,
+            "length_score": 1.0,
+            "llm_accuracy": 1.0,
+            "llm_available": true,
+            "llm_completeness": 1.0,
+            "llm_groundedness": 1.0,
+            "llm_helpfulness": 1.0,
+            "llm_overall": 1.0,
+            "llm_reasoning": "The question asked for the mileage of the cars, and the answer directly provided the claimed fuel efficiencies which are a measure of mileage. The answer is factually correct based on the context, as it repeats the information already given. The answer is complete as it lists the mileage for all the cars mentioned in the context. The answer would be helpful for someone comparing the cars and considering their fuel efficiency. The answer is grounded as it is based on the provided context and does not introduce any new or unrelated information.",
+            "llm_relevance": 1.0,
+            "overall_quality": 0.911,
+            "relevance_score": 0.75,
+            "response_time": 6.53
+          },
+          "success": true
+        },
+        {
+          "question": "What are the pros and cons of each?",
+          "answer": " Here are the pros and cons of the Hyundai Creta and Hyundai Aura models mentioned in the context:\n\nHyundai Creta:\n\nPros:\n- Improved styling with a more sophisticated appearance\n- Better interior design and improved quality for a better in-cabin experience\n- Packed with features, including dual 10.25\u201d displays, Level 2 ADAS, a panoramic sunroof.\n\nCons:\n- Shallow boot space more suitable for small trolley bags\n- Limited automatic variants, with the turbo engine available in only one variant\n- BNCAP score is missing\n\nHyundai Aura:\n\nSince there is no explicit information about the Hyundai Aura in the context, I cannot provide a comprehensive list of pros and cons. However, based on the context, we can see that it is a more affordable option compared to the Hyundai Creta. It is available in multiple variants with different features and powertrains. The Aura offers good comfort, space, and features for its segment. However, it may not have as many high-end features or engine options as the Hyundai Creta.\n\nTo get a better understanding of the Hyundai Aura's pros and cons, consider looking at professional reviews or user feedback specifically focused on that model.",
+          "response_time": 10.50048303604126,
+          "quality_metrics": {
+            "answer_length": 192,
+            "evaluation_method": "llm_hybrid",
+            "groundedness_score": 0.721,
+            "hallucinated_parts": "none",
+            "hallucination_confidence": 1.0,
+            "hallucination_detected": false,
+            "hallucination_explanation": "The answer does not contain any information that is not supported by the context. It only summarizes the pros and cons based on the given information.",
+            "length_score": 1.0,
+            "llm_accuracy": 1.0,
+            "llm_available": true,
+            "llm_completeness": 0.8,
+            "llm_groundedness": 1.0,
+            "llm_helpfulness": 0.8,
+            "llm_overall": 0.94,
+            "llm_reasoning": "The answer directly addresses the question by providing pros and cons for the mentioned Hyundai models. The information is factually correct based on the context. However, it lacks some completeness as it does not provide a comprehensive comparison between the models and does not mention the Citroen cars. The answer is helpful as it provides some key points for consideration when comparing the models. The answer is grounded as it is based on the provided context.",
+            "llm_relevance": 1.0,
+            "overall_quality": 0.9,
+            "relevance_score": 0.8,
+            "response_time": 8.36
+          },
+          "success": true
+        },
+        {
+          "question": "Do these cars have Apple CarPlay?",
+          "answer": " Yes, the following cars in the provided context have Apple CarPlay:\n\n1. Citroen Aircross Plus\n2. Hyundai Aura SX Option\n3. Hyundai Aura SX\n4. Hyundai Aura SX Plus AMT\n\nThese cars come with Apple CarPlay as one of the features.",
+          "response_time": 4.422673940658569,
+          "quality_metrics": {
+            "answer_length": 41,
+            "evaluation_method": "llm_hybrid",
+            "groundedness_score": 0.6,
+            "hallucinated_parts": "none",
+            "hallucination_confidence": 1.0,
+            "hallucination_detected": false,
+            "hallucination_explanation": "The answer is fully supported by the context. It only lists the cars that have Apple CarPlay as a feature according to the provided information.",
+            "length_score": 1.0,
+            "llm_accuracy": 1.0,
+            "llm_available": true,
+            "llm_completeness": 1.0,
+            "llm_groundedness": 1.0,
+            "llm_helpfulness": 1.0,
+            "llm_overall": 1.0,
+            "llm_reasoning": "The answer directly and accurately lists the cars from the context that have Apple CarPlay as a feature. The answer is complete as it provides a comprehensive list of all the cars with this feature. The answer is helpful as it provides the user with the necessary information to make an informed decision. The answer is grounded as it is based on the provided context.",
+            "llm_relevance": 1.0,
+            "overall_quality": 0.928,
+            "relevance_score": 0.8,
+            "response_time": 2.46
+          },
+          "success": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "test_id": 3,
+      "persona": "Budget-conscious first-time buyer",
+      "preferences": {
+        "min_budget": 700000,
+        "max_budget": 1400000,
+        "fuel_type": "Any",
+        "body_type": "Crossover",
+        "transmission": "Any",
+        "seating": 7,
+        "features": [
+          "CNG Kit",
+          "Low Maintenance",
+          "Fuel Efficient Engine",
+          "Good Mileage"
+        ],
+        "performance": 10
+      },
+      "timestamp": "2026-01-22T18:15:29.046900",
+      "recommendation_results": {
+        "success": true,
+        "num_recommendations": 5,
+        "response_time": 2.279634952545166,
+        "quality_metrics": {
+          "diversity_score": 0.281,
+          "evaluation_method": "llm_hybrid",
+          "llm_available": true,
+          "llm_diversity": 0.6,
+          "llm_explanation": "The recommendations mostly match the user's preferences for a crossover vehicle with 7 seats and various features. However, there is only one fuel type (Petrol) and transmission (Manual) represented, which limits diversity. The choices are practical as they all fit the user's seating requirement and offer some level of fuel efficiency. The value is reasonable as the prices fall within the user's unspecified budget. The reasoning behind the selection could be improved by providing more detailed justifications for why these specific models were chosen over others that might also fit the user's criteria.",
+          "llm_overall": 0.71,
+          "llm_practicality": 0.7,
+          "llm_reasoning_quality": 0.7,
+          "llm_relevance": 0.8,
+          "llm_value": 0.7,
+          "num_recommendations": 5,
+          "overall_quality": 0.628,
+          "performance_score": 1.0,
+          "relevance_score": 0.441,
+          "response_time": 0.65
+        },
+        "session_id": "-6677300392765244775"
+      },
+      "qa_results": [
+        {
+          "question": "Are there any hidden costs I should know?",
+          "answer": " Based on the provided context, I don't have enough information to specify any hidden costs as these are just basic details about the cars. The actual purchase price can depend on various factors such as registration, insurance, and additional features or packages chosen at the time of purchase. It's recommended to check with the car dealership for a detailed understanding of the total cost.",
+          "response_time": 3.0316388607025146,
+          "quality_metrics": {
+            "answer_length": 64,
+            "error": "No JSON found in response",
+            "evaluation_method": "llm_hybrid",
+            "groundedness_score": 0.0,
+            "hallucination_detected": false,
+            "length_score": 1.0,
+            "llm_accuracy": 1.0,
+            "llm_available": true,
+            "llm_completeness": 0.5,
+            "llm_groundedness": 1.0,
+            "llm_helpfulness": 0.8,
+            "llm_overall": 0.895,
+            "llm_reasoning": "The answer directly addresses the question by acknowledging that there isn't enough context to specify hidden costs, but advises checking with the car dealership for a detailed understanding. The answer is factually correct based on the context, as it doesn't provide any incorrect information. However, it could be considered less helpful as it doesn't provide any specific information about hidden costs. The answer is grounded in the context as it doesn't make any assumptions or provide any irrelevant information.",
+            "llm_relevance": 1.0,
+            "overall_quality": 0.755,
+            "relevance_score": 0.571,
+            "response_time": 0.89
+          },
+          "success": true
+        },
+        {
+          "question": "Which car should I choose and why?",
+          "answer": " I don't have enough information to choose the best car for you as the answer depends on your personal preferences and requirements. However, based on the provided information, if you're looking for a petrol SUV with 7 seats, Apple CarPlay/Android Auto, and a comfort score close to 3.75/5, you might consider the Citroen Aircross Turbo Max 7 Seater DT. If budget is a concern, the Citroen Aircross Turbo Plus 7 Seater is another option with similar features at a lower price. If you prefer a diesel SUV, the Mahindra Bolero Neo Plus P10 or Mahindra Scorpio S could be suitable choices.",
+          "response_time": 3.4195592403411865,
+          "quality_metrics": {
+            "answer_length": 101,
+            "evaluation_method": "llm_hybrid",
+            "groundedness_score": 0.308,
+            "hallucinated_parts": "none",
+            "hallucination_confidence": 1.0,
+            "hallucination_detected": false,
+            "hallucination_explanation": "The answer is based on the provided context and does not contain any unsupported facts, numbers, or claims.",
+            "length_score": 1.0,
+            "llm_accuracy": 1.0,
+            "llm_available": true,
+            "llm_completeness": 0.8,
+            "llm_groundedness": 1.0,
+            "llm_helpfulness": 0.8,
+            "llm_overall": 0.915,
+            "llm_reasoning": "The answer directly addresses the question by providing options based on the given context. However, it could be more helpful by providing a more detailed comparison of the features and benefits of each option.",
+            "llm_relevance": 0.9,
+            "overall_quality": 0.817,
+            "relevance_score": 0.667,
+            "response_time": 1.66
+          },
+          "success": true
+        },
+        {
+          "question": "Which car has the best fuel efficiency?",
+          "answer": " The context does not provide information on the fuel efficiency of the mentioned cars. I would need data on their miles per gallon or kilometers per liter ratings to accurately answer this question.",
+          "response_time": 2.3833649158477783,
+          "quality_metrics": {
+            "answer_length": 33,
+            "evaluation_method": "llm_hybrid",
+            "groundedness_score": 0.0,
+            "hallucinated_parts": "none",
+            "hallucination_confidence": 1.0,
+            "hallucination_detected": false,
+            "hallucination_explanation": "The answer does not contain any information that is not supported by the context. It only asks for information that is already provided in the context, which is whether the answer contains a hallucination or not.",
+            "length_score": 1.0,
+            "llm_accuracy": 1.0,
+            "llm_available": true,
+            "llm_completeness": 0.0,
+            "llm_groundedness": 1.0,
+            "llm_helpfulness": 0.0,
+            "llm_overall": 0.7,
+            "llm_reasoning": "The answer directly addresses the lack of fuel efficiency information in the context and explains the need for such data to answer the question.",
+            "llm_relevance": 1.0,
+            "overall_quality": 0.574,
+            "relevance_score": 0.2,
+            "response_time": 0.53
+          },
+          "success": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "test_id": 4,
+      "persona": "Safety-focused family person",
+      "preferences": {
+        "min_budget": 600000,
+        "max_budget": 1000000,
+        "fuel_type": "Electric",
+        "body_type": "Crossover",
+        "transmission": "Manual",
+        "seating": 5,
+        "features": [
+          "ISOFIX",
+          "Hill Assist"
+        ],
+        "performance": 6
+      },
+      "timestamp": "2026-01-22T18:15:45.173578",
+      "recommendation_results": {
+        "success": true,
+        "num_recommendations": 5,
+        "response_time": 1.9964752197265625,
+        "quality_metrics": {
+          "diversity_score": 0.435,
+          "evaluation_method": "llm_hybrid",
+          "llm_available": true,
+          "llm_diversity": 0.5,
+          "llm_explanation": "The recommendations only include manual transmission cars, which is a match for the user's preference. However, none of the cars are electric crossovers within the user's budget. The diversity is reasonable as there are different brands and models suggested. The practicality is low as none of the cars meet all the user's preferences. The value is fair as the prices are within the user's budget. The reasoning quality is moderate as the recommendations do not fully address all the user's preferences.",
+          "llm_overall": 0.38,
+          "llm_practicality": 0.2,
+          "llm_reasoning_quality": 0.6,
+          "llm_relevance": 0.3,
+          "llm_value": 0.4,
+          "num_recommendations": 5,
+          "overall_quality": 0.46,
+          "performance_score": 1.0,
+          "relevance_score": 0.5,
+          "response_time": 0.56
+        },
+        "session_id": "-7576379180236874643"
+      },
+      "qa_results": [
+        {
+          "question": "Tell me about the safety ratings of these cars",
+          "answer": " The Maruti Baleno's safety ratings are not mentioned in the review. The other cars in the context have not been tested by any crash test agency, so their safety ratings are also not available in the review.",
+          "response_time": 3.1535370349884033,
+          "quality_metrics": {
+            "answer_length": 37,
+            "evaluation_method": "llm_hybrid",
+            "groundedness_score": 0.65,
+            "hallucinated_parts": "none",
+            "hallucination_confidence": 1.0,
+            "hallucination_detected": false,
+            "hallucination_explanation": "The answer only repeats information from the context about cars that do not have safety ratings mentioned.",
+            "length_score": 1.0,
+            "llm_accuracy": 1.0,
+            "llm_available": true,
+            "llm_completeness": 0.5,
+            "llm_groundedness": 1.0,
+            "llm_helpfulness": 0.0,
+            "llm_overall": 0.7749999999999999,
+            "llm_reasoning": "The answer directly and accurately addresses the question by stating that the safety ratings for the cars mentioned in the context are not available in the review.",
+            "llm_relevance": 1.0,
+            "overall_quality": 0.725,
+            "relevance_score": 0.375,
+            "response_time": 0.67
+          },
+          "success": true
+        },
+        {
+          "question": "Why is one car ranked higher than others?",
+          "answer": " The ranking of cars is not provided in the context. The context only includes a list of cars with their specifications, prices, features, and comfort scores, along with a review for the Maruti Brezza Lxi. Therefore, I don't have enough information to accurately answer why one car is ranked higher than others. The context does not contain a ranked list of cars.",
+          "response_time": 2.9577019214630127,
+          "quality_metrics": {
+            "answer_length": 62,
+            "evaluation_method": "llm_hybrid",
+            "groundedness_score": 0.553,
+            "hallucinated_parts": "none",
+            "hallucination_confidence": 1.0,
+            "hallucination_detected": false,
+            "hallucination_explanation": "The answer accurately states that the context does not provide a ranked list of cars and that no cars are compared or ranked in the answer.",
+            "length_score": 1.0,
+            "llm_accuracy": 1.0,
+            "llm_available": true,
+            "llm_completeness": 0.0,
+            "llm_groundedness": 1.0,
+            "llm_helpfulness": 0.0,
+            "llm_overall": 0.7,
+            "llm_reasoning": "The answer directly addresses the lack of information in the context regarding why one car is ranked higher than others, and acknowledges that the context only includes car specifications, prices, features, and comfort scores. Therefore, the answer is relevant and accurate.",
+            "llm_relevance": 1.0,
+            "overall_quality": 0.716,
+            "relevance_score": 0.833,
+            "response_time": 1.0
+          },
+          "success": true
+        },
+        {
+          "question": "Which has the most spacious interior?",
+          "answer": " Based on the provided context, the Hyundai i20 N-Line N6, Kia Sonet HTK Turbo iMT, Hyundai Venue Executive Turbo, Maruti Ciaz Sigma, Kia Syros HTK Opt Turbo, Kia Syros HTK Turbo, Kia Sonet HTK (O) Turbo iMT, Maruti Brezza Lxi, Mahindra XUV 3XO MX3 Diesel, and Citroen C3 Puretech 110 Shine DT all have a spacious interior with 5.0 seats. However, without specific interior dimensions, it's difficult to definitively say which has the most spacious interior. The Maruti Ciaz Sigma has ventilated seats, suggesting more spacious and comfortable seating, and the Kia Sonet HTK Turbo iMT, Hyundai Venue Executive Turbo, Kia Syros HTK Opt Turbo, Kia Syros HTK Turbo, Kia Sonet HTK (O) Turbo iMT, and Citroen C3 Puretech 110 Shine DT all have Apple CarPlay/Android Auto, indicating a modern and likely spacious infotainment system.",
+          "response_time": 4.628144979476929,
+          "quality_metrics": {
+            "answer_length": 135,
+            "error": "No JSON found in response",
+            "evaluation_method": "llm_hybrid",
+            "groundedness_score": 0.682,
+            "hallucination_detected": false,
+            "length_score": 1.0,
+            "llm_accuracy": 1.0,
+            "llm_available": true,
+            "llm_completeness": 0.8,
+            "llm_groundedness": 1.0,
+            "llm_helpfulness": 0.7,
+            "llm_overall": 0.925,
+            "llm_reasoning": "The answer directly addresses the question by listing the cars with spacious interiors based on the context. The answer is factually correct as it is based on the provided context. However, it could be more helpful by providing more specific information about interior dimensions or ranking the cars based on spaciousness. The answer is grounded in the context and does not contain any hallucinated information.",
+            "llm_relevance": 1.0,
+            "overall_quality": 0.879,
+            "relevance_score": 0.75,
+            "response_time": 2.72
+          },
+          "success": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "test_id": 5,
+      "persona": "Ride-sharing driver",
+      "preferences": {
+        "min_budget": 2000000,
+        "max_budget": 3000000,
+        "fuel_type": "Hybrid",
+        "body_type": "MUV",
+        "transmission": "Any",
+        "seating": 5,
+        "features": [
+          "Low Maintenance",
+          "CNG Kit",
+          "Good Mileage"
+        ],
+        "performance": 8
+      },
+      "timestamp": "2026-01-22T18:16:02.920360",
+      "recommendation_results": {
+        "success": true,
+        "num_recommendations": 5,
+        "response_time": 2.6674718856811523,
+        "quality_metrics": {
+          "diversity_score": 0.213,
+          "error": "No JSON found in response",
+          "evaluation_method": "llm_hybrid",
+          "llm_available": true,
+          "llm_overall": 0.5,
+          "num_recommendations": 5,
+          "overall_quality": 0.483,
+          "performance_score": 1.0,
+          "relevance_score": 0.385,
+          "response_time": 0.56
+        },
+        "session_id": "4723654799433873593"
+      },
+      "qa_results": [
+        {
+          "question": "Which is most economical to run?",
+          "answer": " Based on the provided context, the Hyundai Creta Electric Premium HC and Hyundai Creta Electric Premium DT are the most economical to run as they are electric vehicles. Electric cars are generally more energy-efficient and cost-effective than petrol or diesel counterparts, especially for city driving. However, the overall cost will also depend on factors such as local electricity prices and government incentives for electric vehicles.",
+          "response_time": 3.775296926498413,
+          "quality_metrics": {
+            "answer_length": 65,
+            "evaluation_method": "llm_hybrid",
+            "groundedness_score": 0.19,
+            "hallucinated_parts": "none",
+            "hallucination_confidence": 1.0,
+            "hallucination_detected": false,
+            "hallucination_explanation": "The answer is based on the information provided in the context and makes a valid comparison between electric and diesel/petrol vehicles.",
+            "length_score": 1.0,
+            "llm_accuracy": 1.0,
+            "llm_available": true,
+            "llm_completeness": 0.8,
+            "llm_groundedness": 1.0,
+            "llm_helpfulness": 0.9,
+            "llm_overall": 0.9550000000000001,
+            "llm_reasoning": "The answer directly addresses the question by identifying the most economical cars based on their fuel type. The answer is factually correct as electric vehicles are generally more economical to run than petrol or diesel cars. The answer could be more complete by providing specific information about the cost savings for each electric vehicle, but it does provide sufficient information to help the user make a decision. The answer is helpful as it provides a clear answer to the question and highlights the cost-effectiveness of electric vehicles. The answer is grounded in the provided context as it is based on the fuel types and efficiency of the cars listed.",
+            "llm_relevance": 1.0,
+            "overall_quality": 0.841,
+            "relevance_score": 0.75,
+            "response_time": 1.22
+          },
+          "success": true
+        },
+        {
+          "question": "Which car should I choose and why?",
+          "answer": " I don't have enough information to choose the best car for you as I don't know your preferences, budget, or requirements. However, if you're looking for a Diesel SUV with 7 seats and automatic transmission, Hyundai Alcazar Signature Diesel AT could be a suitable option considering its availability at three different price points: Rs. 21,34,900, Rs. 21,49,900, and Rs. 21,05,900. They all have the same features, power, and comfort score, but the slightly higher price points come with a matte finish. If you prefer Petrol, Hyundai Alcazar Signature DCT and Hyundai Alcazar Signature DCT 6Str could be considered. If you're looking for an Electric SUV, Hyundai Creta Electric Premium HC and Hyundai Creta Electric Premium DT are available. Please make your decision based on your specific needs and preferences.",
+          "response_time": 4.271026849746704,
+          "quality_metrics": {
+            "answer_length": 129,
+            "evaluation_method": "llm_hybrid",
+            "groundedness_score": 0.195,
+            "hallucinated_parts": "none",
+            "hallucination_confidence": 1.0,
+            "hallucination_detected": false,
+            "hallucination_explanation": "The generated answer only provides information that is present in the context.",
+            "length_score": 1.0,
+            "llm_accuracy": 1.0,
+            "llm_available": true,
+            "llm_completeness": 0.8,
+            "llm_groundedness": 1.0,
+            "llm_helpfulness": 0.8,
+            "llm_overall": 0.94,
+            "llm_reasoning": "The answer directly addresses the question by providing options based on the given context. It is factually correct as it accurately states the features, power, and comfort score of each car. However, it could be more complete by providing more detailed information about the differences between the cars, such as fuel efficiency or driving experience. The answer is helpful as it provides potential options for the user, but it could be more helpful by providing more detailed information to aid in the decision-making process. The answer is grounded as it is based solely on the provided context.",
+            "llm_relevance": 1.0,
+            "overall_quality": 0.821,
+            "relevance_score": 0.667,
+            "response_time": 2.16
+          },
+          "success": true
+        },
+        {
+          "question": "Which car offers best value for money?",
+          "answer": " Based on the provided context, the Hyundai Alcazar Platinum Diesel AT seems to offer a better value for money. It has the lowest price among the diesel SUVs with automatic transmission and the same comfort score, seating capacity, and power as the other Hyundai Alcazar models. However, the final decision should also consider other factors like fuel efficiency, features, and personal preferences.",
+          "response_time": 3.0081307888031006,
+          "quality_metrics": {
+            "answer_length": 62,
+            "evaluation_method": "llm_hybrid",
+            "groundedness_score": 0.143,
+            "hallucinated_parts": "none",
+            "hallucination_confidence": 1.0,
+            "hallucination_detected": false,
+            "hallucination_explanation": "The answer is based on the information provided in the context and does not contain any unsupported facts, numbers, or claims.",
+            "length_score": 1.0,
+            "llm_accuracy": 1.0,
+            "llm_available": true,
+            "llm_completeness": 0.8,
+            "llm_groundedness": 1.0,
+            "llm_helpfulness": 0.8,
+            "llm_overall": 0.94,
+            "llm_reasoning": "The answer directly addresses the question by providing a comparison of the car models based on their price and the same features. It is factually correct as it uses the given context. However, it could be more complete by including a comparison of other factors like fuel efficiency and features. The answer is helpful as it provides a starting point for the user to make a decision. It is grounded as it is based on the provided context.",
+            "llm_relevance": 1.0,
+            "overall_quality": 0.775,
+            "relevance_score": 0.333,
+            "response_time": 0.98
+          },
+          "success": true
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

@@ -38,6 +38,8 @@ export default function Home() {
   const [expandedCard, setExpandedCard] = useState(null);
   const [sessionId, setSessionId] = useState("");
   const [reviews, setReviews] = useState({});
+  const [qualityMetrics, setQualityMetrics] = useState(null);
+  const [answerQuality, setAnswerQuality] = useState(null);
 
   useEffect(() => {
     if (hasSearched && question.trim() === "") {
@@ -83,6 +85,11 @@ export default function Home() {
         setReviews(response.data.reviews);
       }
       
+      // Store quality metrics
+      if (response.data.quality_metrics) {
+        setQualityMetrics(response.data.quality_metrics);
+      }
+      
       setHasSearched(true);
     } catch (err) {
       console.error("Recommendation error:", err);
@@ -102,6 +109,11 @@ export default function Home() {
         session_id: sessionId
       });
       setChatResponse(response.data.answer);
+      
+      // Store answer quality metrics
+      if (response.data.quality_metrics) {
+        setAnswerQuality(response.data.quality_metrics);
+      }
     } catch (err) {
       console.error("Chat error:", err);
       setChatResponse("Sorry, I couldn't process your question. Please try again.");
@@ -312,11 +324,244 @@ export default function Home() {
                   setError(""); 
                   setSessionId("");
                   setReviews({});
+                  setQualityMetrics(null);
+                  setAnswerQuality(null);
                 }}
               >
                 <RefreshCw size={14} className="mr-1" /> New Search
               </button>
             </div>
+
+            {/* Quality Metrics Display */}
+            {qualityMetrics && (
+              <div className="mb-6 bg-gradient-to-r from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-blue-800/50 rounded-xl p-5 shadow-lg">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-lg font-semibold flex items-center text-blue-300">
+                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                    Recommendation Quality Metrics
+                  </h3>
+                  {qualityMetrics.evaluation_method && (
+                    <span className={`text-xs px-2 py-1 rounded ${
+                      qualityMetrics.evaluation_method === 'advanced_hybrid' 
+                        ? 'bg-gradient-to-r from-purple-500/20 to-pink-500/20 text-purple-200 border border-purple-400/30' 
+                        : qualityMetrics.evaluation_method.includes('hybrid')
+                        ? 'bg-purple-500/20 text-purple-300' 
+                        : 'bg-gray-600/20 text-gray-400'
+                    }`}>
+                      {qualityMetrics.evaluation_method === 'advanced_hybrid' 
+                        ? '🚀 Advanced Multi-Framework' 
+                        : qualityMetrics.evaluation_method.includes('hybrid')
+                        ? '🤖 AI-Enhanced' 
+                        : '📊 Rule-Based'}
+                    </span>
+                  )}
+                </div>
+                
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-4">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-white">{(qualityMetrics.overall_quality * 100).toFixed(0)}%</div>
+                    <div className="text-xs text-gray-400 mt-1">Overall Quality</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-green-400">{(qualityMetrics.relevance_score * 100).toFixed(0)}%</div>
+                    <div className="text-xs text-gray-400 mt-1">Relevance</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-purple-400">{(qualityMetrics.diversity_score * 100).toFixed(0)}%</div>
+                    <div className="text-xs text-gray-400 mt-1">Diversity</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-blue-400">{(qualityMetrics.performance_score * 100).toFixed(0)}%</div>
+                    <div className="text-xs text-gray-400 mt-1">Performance</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-yellow-400">{qualityMetrics.response_time}s</div>
+                    <div className="text-xs text-gray-400 mt-1">Response Time</div>
+                  </div>
+                </div>
+
+                {/* Advanced Framework Scores */}
+                {qualityMetrics.advanced_available && (
+                  <div className="mt-4 pt-4 border-t border-purple-700/30">
+                    <div className="text-xs font-semibold text-purple-300 mb-3 flex items-center">
+                      <span className="mr-2">🚀 Advanced Metrics (NDCG, ILD, Novelty):</span>
+                    </div>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+                      {qualityMetrics.advanced_ndcg !== undefined && (
+                        <div className="text-center">
+                          <div className="font-semibold text-cyan-300">{(qualityMetrics.advanced_ndcg * 100).toFixed(0)}%</div>
+                          <div className="text-gray-500">NDCG@K</div>
+                        </div>
+                      )}
+                      {qualityMetrics.advanced_ild !== undefined && (
+                        <div className="text-center">
+                          <div className="font-semibold text-purple-300">{(qualityMetrics.advanced_ild * 100).toFixed(0)}%</div>
+                          <div className="text-gray-500">ILD (Diversity)</div>
+                        </div>
+                      )}
+                      {qualityMetrics.advanced_novelty !== undefined && (
+                        <div className="text-center">
+                          <div className="font-semibold text-pink-300">{(qualityMetrics.advanced_novelty * 100).toFixed(0)}%</div>
+                          <div className="text-gray-500">Novelty</div>
+                        </div>
+                      )}
+                      {qualityMetrics.advanced_serendipity !== undefined && (
+                        <div className="text-center">
+                          <div className="font-semibold text-yellow-300">{(qualityMetrics.advanced_serendipity * 100).toFixed(0)}%</div>
+                          <div className="text-gray-500">Serendipity</div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                {/* LLM Judge Scores (if available) */}
+                {qualityMetrics.llm_available && qualityMetrics.llm_overall && (
+                  <div className="mt-4 pt-4 border-t border-blue-700/30">
+                    <div className="text-xs text-gray-400 mb-2 flex items-center">
+                      <span className="mr-2">🤖 AI Judge Analysis:</span>
+                      {qualityMetrics.llm_explanation && (
+                        <span className="text-gray-300 italic">"{qualityMetrics.llm_explanation}"</span>
+                      )}
+                    </div>
+                    <div className="grid grid-cols-2 md:grid-cols-5 gap-3 text-xs">
+                      {qualityMetrics.llm_relevance !== undefined && (
+                        <div className="text-center">
+                          <div className="font-semibold text-green-300">{(qualityMetrics.llm_relevance * 100).toFixed(0)}%</div>
+                          <div className="text-gray-500">AI Relevance</div>
+                        </div>
+                      )}
+                      {qualityMetrics.llm_diversity !== undefined && (
+                        <div className="text-center">
+                          <div className="font-semibold text-purple-300">{(qualityMetrics.llm_diversity * 100).toFixed(0)}%</div>
+                          <div className="text-gray-500">AI Diversity</div>
+                        </div>
+                      )}
+                      {qualityMetrics.llm_practicality !== undefined && (
+                        <div className="text-center">
+                          <div className="font-semibold text-blue-300">{(qualityMetrics.llm_practicality * 100).toFixed(0)}%</div>
+                          <div className="text-gray-500">Practicality</div>
+                        </div>
+                      )}
+                      {qualityMetrics.llm_value !== undefined && (
+                        <div className="text-center">
+                          <div className="font-semibold text-yellow-300">{(qualityMetrics.llm_value * 100).toFixed(0)}%</div>
+                          <div className="text-gray-500">Value</div>
+                        </div>
+                      )}
+                      {qualityMetrics.llm_reasoning_quality !== undefined && (
+                        <div className="text-center">
+                          <div className="font-semibold text-pink-300">{(qualityMetrics.llm_reasoning_quality * 100).toFixed(0)}%</div>
+                          <div className="text-gray-500">Reasoning</div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                {/* Enhanced Evaluation Metrics */}
+                {qualityMetrics.enhanced && (
+                  <div className="mt-4 pt-4 border-t border-green-700/30">
+                    <div className="text-xs font-semibold text-green-300 mb-3 flex items-center">
+                      <span className="mr-2">✨ Enhanced Evaluation:</span>
+                    </div>
+                    
+                    {/* Predicted Satisfaction */}
+                    {qualityMetrics.enhanced.predicted_satisfaction && (
+                      <div className="mb-4">
+                        <div className="flex justify-between items-center mb-2">
+                          <span className="text-xs text-gray-400">Predicted User Satisfaction</span>
+                          <span className="text-sm font-semibold text-green-300">
+                            {(qualityMetrics.enhanced.predicted_satisfaction.predicted_satisfaction * 100).toFixed(0)}%
+                          </span>
+                        </div>
+                        <div className="grid grid-cols-4 gap-2 text-xs">
+                          <div className="text-center">
+                            <div className="font-semibold text-blue-300">
+                              {(qualityMetrics.enhanced.predicted_satisfaction.best_match_score * 100).toFixed(0)}%
+                            </div>
+                            <div className="text-gray-500">Best Match</div>
+                          </div>
+                          <div className="text-center">
+                            <div className="font-semibold text-purple-300">
+                              {(qualityMetrics.enhanced.predicted_satisfaction.top3_avg * 100).toFixed(0)}%
+                            </div>
+                            <div className="text-gray-500">Top 3 Avg</div>
+                          </div>
+                          <div className="text-center">
+                            <div className="font-semibold text-yellow-300">
+                              {(qualityMetrics.enhanced.predicted_satisfaction.diversity_factor * 100).toFixed(0)}%
+                            </div>
+                            <div className="text-gray-500">Diversity</div>
+                          </div>
+                          <div className="text-center">
+                            <div className="font-semibold text-green-300">
+                              {(qualityMetrics.enhanced.predicted_satisfaction.confidence * 100).toFixed(0)}%
+                            </div>
+                            <div className="text-gray-500">Confidence</div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Preference Alignment */}
+                    {qualityMetrics.enhanced.preference_alignment && (
+                      <div className="mb-4">
+                        <div className="flex justify-between items-center mb-2">
+                          <span className="text-xs text-gray-400">Preference Alignment</span>
+                          <span className="text-sm font-semibold text-green-300">
+                            {(qualityMetrics.enhanced.preference_alignment.overall_alignment * 100).toFixed(0)}%
+                          </span>
+                        </div>
+                        <div className="grid grid-cols-4 gap-2 text-xs">
+                          <div className="text-center">
+                            <div className="font-semibold text-blue-300">
+                              {(qualityMetrics.enhanced.preference_alignment.budget_alignment * 100).toFixed(0)}%
+                            </div>
+                            <div className="text-gray-500">Budget</div>
+                          </div>
+                          <div className="text-center">
+                            <div className="font-semibold text-purple-300">
+                              {(qualityMetrics.enhanced.preference_alignment.fuel_alignment * 100).toFixed(0)}%
+                            </div>
+                            <div className="text-gray-500">Fuel</div>
+                          </div>
+                          <div className="text-center">
+                            <div className="font-semibold text-yellow-300">
+                              {(qualityMetrics.enhanced.preference_alignment.body_alignment * 100).toFixed(0)}%
+                            </div>
+                            <div className="text-gray-500">Body Type</div>
+                          </div>
+                          <div className="text-center">
+                            <div className="font-semibold text-green-300">
+                              {(qualityMetrics.enhanced.preference_alignment.transmission_alignment * 100).toFixed(0)}%
+                            </div>
+                            <div className="text-gray-500">Transmission</div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Actionable Insights */}
+                    {qualityMetrics.enhanced.actionable_insights && qualityMetrics.enhanced.actionable_insights.length > 0 && (
+                      <div className="mt-3 pt-3 border-t border-green-700/20">
+                        <div className="text-xs font-semibold text-green-300 mb-2">💡 Insights:</div>
+                        <ul className="space-y-1">
+                          {qualityMetrics.enhanced.actionable_insights.map((insight, idx) => (
+                            <li key={idx} className="text-xs text-gray-300 flex items-start">
+                              <span className="text-green-400 mr-1.5">•</span>
+                              {insight}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            )}
 
             <div className="space-y-4">
               {results.map((match, idx) => (
@@ -330,9 +575,32 @@ export default function Home() {
                     className="p-5 cursor-pointer flex justify-between items-center"
                     onClick={() => toggleCard(idx)}
                   >
-                    <div>
-                      <h3 className="text-xl font-bold">{match.car.variant}</h3>
-                      <p className="text-lg font-semibold text-blue-400">{match.car.price}</p>
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <h3 className="text-xl font-bold">{match.car.variant}</h3>
+                        {match.match_quality && (
+                          <span className={`text-xs px-2 py-1 rounded-full ${
+                            match.match_quality === 'Excellent Match' 
+                              ? 'bg-green-500/20 text-green-300 border border-green-400/30' 
+                              : match.match_quality === 'Great Match'
+                              ? 'bg-blue-500/20 text-blue-300 border border-blue-400/30'
+                              : match.match_quality === 'Good Match'
+                              ? 'bg-yellow-500/20 text-yellow-300 border border-yellow-400/30'
+                              : 'bg-gray-500/20 text-gray-300 border border-gray-400/30'
+                          }`}>
+                            {match.match_quality}
+                          </span>
+                        )}
+                      </div>
+                      <p className="text-lg font-semibold text-blue-400 mt-1">{match.car.price}</p>
+                      {match.explanation && (
+                        <p className="text-sm text-gray-400 mt-2 flex items-start">
+                          <svg className="w-4 h-4 mr-1.5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          {match.explanation}
+                        </p>
+                      )}
                     </div>
                     <div className="flex items-center space-x-4">
                       <div className="text-right hidden sm:block">
@@ -435,8 +703,164 @@ export default function Home() {
               </div>
               
               {chatResponse && (
-                <div className="mt-4 p-5 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 animate-fade-in whitespace-pre-wrap">
-                  {chatResponse}
+                <div className="mt-4 space-y-3">
+                  <div className="p-5 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 animate-fade-in whitespace-pre-wrap">
+                    {chatResponse}
+                  </div>
+                  
+                  {/* Answer Quality Metrics */}
+                  {answerQuality && (
+                    <div className="p-4 bg-gradient-to-r from-green-900/20 to-blue-900/20 border border-green-800/30 rounded-lg">
+                      {/* Hallucination Warning */}
+                      {answerQuality.hallucination_detected && (
+                        <div className="mb-3 p-2 bg-red-900/30 border border-red-700/50 rounded text-xs text-red-300 flex items-center">
+                          <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                          </svg>
+                          <div>
+                            <div className="font-semibold">⚠️ Possible Hallucination Detected</div>
+                            {answerQuality.hallucination_explanation && (
+                              <div className="mt-1">{answerQuality.hallucination_explanation}</div>
+                            )}
+                          </div>
+                        </div>
+                      )}
+                      
+                      <div className="flex items-center justify-between text-sm mb-2">
+                        <div className="flex items-center space-x-4 flex-wrap">
+                          <div>
+                            <span className="text-gray-400">Quality:</span>
+                            <span className="ml-2 font-semibold text-green-400">{(answerQuality.overall_quality * 100).toFixed(0)}%</span>
+                          </div>
+                          <div>
+                            <span className="text-gray-400">Relevance:</span>
+                            <span className="ml-2 font-semibold text-blue-400">{(answerQuality.relevance_score * 100).toFixed(0)}%</span>
+                          </div>
+                          <div>
+                            <span className="text-gray-400">Grounded:</span>
+                            <span className="ml-2 font-semibold text-purple-400">{(answerQuality.groundedness_score * 100).toFixed(0)}%</span>
+                          </div>
+                          <div>
+                            <span className="text-gray-400">Time:</span>
+                            <span className="ml-2 font-semibold text-yellow-400">{answerQuality.response_time}s</span>
+                          </div>
+                        </div>
+                        {answerQuality.evaluation_method && (
+                          <span className={`text-xs px-2 py-1 rounded ${
+                            answerQuality.evaluation_method === 'advanced_hybrid' 
+                              ? 'bg-gradient-to-r from-purple-500/20 to-pink-500/20 text-purple-200 border border-purple-400/30' 
+                              : answerQuality.evaluation_method.includes('hybrid')
+                              ? 'bg-purple-500/20 text-purple-300' 
+                              : 'bg-gray-600/20 text-gray-400'
+                          }`}>
+                            {answerQuality.evaluation_method === 'advanced_hybrid' 
+                              ? '🚀 DeepEval+RAGAS' 
+                              : answerQuality.evaluation_method.includes('hybrid')
+                              ? '🤖 AI-Enhanced' 
+                              : '📊 Rule-Based'}
+                          </span>
+                        )}
+                      </div>
+
+                      {/* DeepEval Scores */}
+                      {answerQuality.deepeval_available && answerQuality.deepeval_overall && (
+                        <div className="mt-3 pt-3 border-t border-purple-700/30">
+                          <div className="text-xs font-semibold text-purple-300 mb-2">🔬 DeepEval Framework:</div>
+                          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-xs">
+                            {answerQuality.deepeval_answerrelevancy !== undefined && (
+                              <div className="text-center">
+                                <div className="font-semibold text-cyan-300">{(answerQuality.deepeval_answerrelevancy * 100).toFixed(0)}%</div>
+                                <div className="text-gray-500">Answer Relevancy</div>
+                              </div>
+                            )}
+                            {answerQuality.deepeval_faithfulness !== undefined && (
+                              <div className="text-center">
+                                <div className="font-semibold text-green-300">{(answerQuality.deepeval_faithfulness * 100).toFixed(0)}%</div>
+                                <div className="text-gray-500">Faithfulness</div>
+                              </div>
+                            )}
+                            {answerQuality.deepeval_hallucination !== undefined && (
+                              <div className="text-center">
+                                <div className="font-semibold text-red-300">{(answerQuality.deepeval_hallucination * 100).toFixed(0)}%</div>
+                                <div className="text-gray-500">Hallucination</div>
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* RAGAS Scores */}
+                      {answerQuality.ragas_available && answerQuality.ragas_overall && (
+                        <div className="mt-3 pt-3 border-t border-pink-700/30">
+                          <div className="text-xs font-semibold text-pink-300 mb-2">📊 RAGAS Framework:</div>
+                          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-xs">
+                            {answerQuality.ragas_faithfulness !== undefined && (
+                              <div className="text-center">
+                                <div className="font-semibold text-green-300">{(answerQuality.ragas_faithfulness * 100).toFixed(0)}%</div>
+                                <div className="text-gray-500">Faithfulness</div>
+                              </div>
+                            )}
+                            {answerQuality.ragas_answer_relevancy !== undefined && (
+                              <div className="text-center">
+                                <div className="font-semibold text-blue-300">{(answerQuality.ragas_answer_relevancy * 100).toFixed(0)}%</div>
+                                <div className="text-gray-500">Relevancy</div>
+                              </div>
+                            )}
+                            {answerQuality.ragas_context_precision !== undefined && (
+                              <div className="text-center">
+                                <div className="font-semibold text-purple-300">{(answerQuality.ragas_context_precision * 100).toFixed(0)}%</div>
+                                <div className="text-gray-500">Context Precision</div>
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* LLM Judge Scores (if available) */}
+                      {answerQuality.llm_available && answerQuality.llm_overall && (
+                        <div className="mt-3 pt-3 border-t border-green-700/30">
+                          <div className="text-xs text-gray-400 mb-2 flex items-center">
+                            <span className="mr-2">🤖 AI Judge Analysis:</span>
+                            {answerQuality.llm_reasoning && (
+                              <span className="text-gray-300 italic">"{answerQuality.llm_reasoning}"</span>
+                            )}
+                          </div>
+                          <div className="grid grid-cols-2 md:grid-cols-5 gap-3 text-xs">
+                            {answerQuality.llm_relevance !== undefined && (
+                              <div className="text-center">
+                                <div className="font-semibold text-green-300">{(answerQuality.llm_relevance * 100).toFixed(0)}%</div>
+                                <div className="text-gray-500">AI Relevance</div>
+                              </div>
+                            )}
+                            {answerQuality.llm_accuracy !== undefined && (
+                              <div className="text-center">
+                                <div className="font-semibold text-blue-300">{(answerQuality.llm_accuracy * 100).toFixed(0)}%</div>
+                                <div className="text-gray-500">Accuracy</div>
+                              </div>
+                            )}
+                            {answerQuality.llm_completeness !== undefined && (
+                              <div className="text-center">
+                                <div className="font-semibold text-purple-300">{(answerQuality.llm_completeness * 100).toFixed(0)}%</div>
+                                <div className="text-gray-500">Completeness</div>
+                              </div>
+                            )}
+                            {answerQuality.llm_helpfulness !== undefined && (
+                              <div className="text-center">
+                                <div className="font-semibold text-yellow-300">{(answerQuality.llm_helpfulness * 100).toFixed(0)}%</div>
+                                <div className="text-gray-500">Helpfulness</div>
+                              </div>
+                            )}
+                            {answerQuality.llm_groundedness !== undefined && (
+                              <div className="text-center">
+                                <div className="font-semibold text-pink-300">{(answerQuality.llm_groundedness * 100).toFixed(0)}%</div>
+                                <div className="text-gray-500">AI Grounded</div>
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               )}
             </div>

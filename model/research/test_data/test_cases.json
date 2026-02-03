@@ -1,0 +1,2190 @@
+{
+  "metadata": {
+    "generated_at": "2026-01-24T09:25:33.029114",
+    "num_test_cases": 100,
+    "total_questions": 300,
+    "version": "1.0"
+  },
+  "test_cases": [
+    {
+      "id": 1,
+      "persona": "Retired couple",
+      "preferences": {
+        "min_budget": 600000,
+        "max_budget": 1000000,
+        "fuel_type": "Hybrid",
+        "body_type": "Any",
+        "transmission": "Manual",
+        "seating": 5,
+        "features": [
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 3
+      },
+      "questions": [
+        "What is the mileage of these cars?",
+        "Why is one car ranked higher than others?",
+        "Which car has the best performance?"
+      ]
+    },
+    {
+      "id": 2,
+      "persona": "Business executive",
+      "preferences": {
+        "min_budget": 1500000,
+        "max_budget": 2000000,
+        "fuel_type": "Diesel",
+        "body_type": "Crossover",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "Wireless Charging"
+        ],
+        "performance": 9
+      },
+      "questions": [
+        "Which car has the most technology features?",
+        "What are the main differences between these cars?",
+        "How is the engine power comparison?"
+      ]
+    },
+    {
+      "id": 3,
+      "persona": "Business executive",
+      "preferences": {
+        "min_budget": 2000000,
+        "max_budget": 3000000,
+        "fuel_type": "Diesel",
+        "body_type": "Any",
+        "transmission": "Manual",
+        "seating": 7,
+        "features": [
+          "Ventilated Seats",
+          "Automatic Climate Control",
+          "Wireless Charging"
+        ],
+        "performance": 1
+      },
+      "questions": [
+        "What are the pros and cons of each?",
+        "How do these cars compare overall?",
+        "What is the mileage of these cars?"
+      ]
+    },
+    {
+      "id": 4,
+      "persona": "Budget-conscious first-time buyer",
+      "preferences": {
+        "min_budget": 1800000,
+        "max_budget": 2500000,
+        "fuel_type": "Electric",
+        "body_type": "Any",
+        "transmission": "Manual",
+        "seating": 5,
+        "features": [
+          "Automatic Climate Control",
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 7
+      },
+      "questions": [
+        "Which car offers best value for money?",
+        "What are the pros and cons of each?",
+        "What about the ride quality?"
+      ]
+    },
+    {
+      "id": 5,
+      "persona": "Senior citizen looking for comfort",
+      "preferences": {
+        "min_budget": 500000,
+        "max_budget": 800000,
+        "fuel_type": "Diesel",
+        "body_type": "Crossover",
+        "transmission": "Any",
+        "seating": 8,
+        "features": [
+          "Ventilated Seats",
+          "Sunroof",
+          "Automatic Climate Control"
+        ],
+        "performance": 9
+      },
+      "questions": [
+        "Which car is most comfortable for long drives?",
+        "How do these cars compare overall?",
+        "Which is the most affordable option?"
+      ]
+    },
+    {
+      "id": 6,
+      "persona": "Growing family with kids",
+      "preferences": {
+        "min_budget": 1200000,
+        "max_budget": 1800000,
+        "fuel_type": "Any",
+        "body_type": "SUV",
+        "transmission": "Any",
+        "seating": 7,
+        "features": [
+          "360 Camera",
+          "Lane Assist"
+        ],
+        "performance": 3
+      },
+      "questions": [
+        "How much will I spend on fuel monthly?",
+        "Why is one car ranked higher than others?",
+        "Which one accelerates faster?"
+      ]
+    },
+    {
+      "id": 7,
+      "persona": "Practical daily commuter",
+      "preferences": {
+        "min_budget": 700000,
+        "max_budget": 1400000,
+        "fuel_type": "Hybrid",
+        "body_type": "Crossover",
+        "transmission": "Any",
+        "seating": 5,
+        "features": [
+          "Automatic Climate Control",
+          "Sunroof",
+          "Wireless Charging"
+        ],
+        "performance": 6
+      },
+      "questions": [
+        "How much will I spend on fuel monthly?",
+        "What are the pros and cons of each?",
+        "What safety features are included?"
+      ]
+    },
+    {
+      "id": 8,
+      "persona": "Senior citizen looking for comfort",
+      "preferences": {
+        "min_budget": 1500000,
+        "max_budget": 2000000,
+        "fuel_type": "CNG",
+        "body_type": "Sedan",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "Ventilated Seats",
+          "Sunroof",
+          "Automatic Climate Control"
+        ],
+        "performance": 2
+      },
+      "questions": [
+        "Which has the most spacious interior?",
+        "Which car should I choose and why?",
+        "Which has the best resale value?"
+      ]
+    },
+    {
+      "id": 9,
+      "persona": "Budget-conscious first-time buyer",
+      "preferences": {
+        "min_budget": 2500000,
+        "max_budget": 4000000,
+        "fuel_type": "Hybrid",
+        "body_type": "Hatchback",
+        "transmission": "Manual",
+        "seating": 7,
+        "features": [
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 7
+      },
+      "questions": [
+        "Are there any hidden costs I should know?",
+        "What are the main differences between these cars?",
+        "Which car has the best fuel efficiency?"
+      ]
+    },
+    {
+      "id": 10,
+      "persona": "Practical daily commuter",
+      "preferences": {
+        "min_budget": 1200000,
+        "max_budget": 1800000,
+        "fuel_type": "Petrol",
+        "body_type": "SUV",
+        "transmission": "Manual",
+        "seating": 5,
+        "features": [
+          "Lane Assist"
+        ],
+        "performance": 8
+      },
+      "questions": [
+        "What features do these cars offer?",
+        "Which car should I choose and why?",
+        "What is the mileage of these cars?"
+      ]
+    },
+    {
+      "id": 11,
+      "persona": "Tech-savvy millennial",
+      "preferences": {
+        "min_budget": 1800000,
+        "max_budget": 2500000,
+        "fuel_type": "Hybrid",
+        "body_type": "SUV",
+        "transmission": "Any",
+        "seating": 8,
+        "features": [
+          "Wireless Charging",
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 1
+      },
+      "questions": [
+        "What features do these cars offer?",
+        "What are the pros and cons of each?",
+        "Which car offers best value for money?"
+      ]
+    },
+    {
+      "id": 12,
+      "persona": "Luxury comfort seeker",
+      "preferences": {
+        "min_budget": 2000000,
+        "max_budget": 3000000,
+        "fuel_type": "Hybrid",
+        "body_type": "MUV",
+        "transmission": "Automatic",
+        "seating": 5,
+        "features": [
+          "360 Camera",
+          "Wireless Charging"
+        ],
+        "performance": 10
+      },
+      "questions": [
+        "Which car is most comfortable for long drives?",
+        "What are the pros and cons of each?",
+        "Are spare parts easily available?"
+      ]
+    },
+    {
+      "id": 13,
+      "persona": "Long-distance highway driver",
+      "preferences": {
+        "min_budget": 500000,
+        "max_budget": 800000,
+        "fuel_type": "Any",
+        "body_type": "Sedan",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "Automatic Climate Control"
+        ],
+        "performance": 9
+      },
+      "questions": [
+        "Which is most economical to run?",
+        "Why is one car ranked higher than others?",
+        "What about the ride quality?"
+      ]
+    },
+    {
+      "id": 14,
+      "persona": "Budget-conscious first-time buyer",
+      "preferences": {
+        "min_budget": 1800000,
+        "max_budget": 2500000,
+        "fuel_type": "Diesel",
+        "body_type": "Crossover",
+        "transmission": "Manual",
+        "seating": 7,
+        "features": [
+          "Automatic Climate Control",
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 3
+      },
+      "questions": [
+        "Which has the best resale value?",
+        "What are the main differences between these cars?",
+        "How is the rear seat comfort?"
+      ]
+    },
+    {
+      "id": 15,
+      "persona": "City driver with parking concerns",
+      "preferences": {
+        "min_budget": 1500000,
+        "max_budget": 2000000,
+        "fuel_type": "Electric",
+        "body_type": "Sedan",
+        "transmission": "Manual",
+        "seating": 5,
+        "features": [
+          "Sunroof",
+          "Automatic Climate Control",
+          "Ventilated Seats"
+        ],
+        "performance": 3
+      },
+      "questions": [
+        "Which is most economical to run?",
+        "How do these cars compare overall?",
+        "What safety features are included?"
+      ]
+    },
+    {
+      "id": 16,
+      "persona": "Senior citizen looking for comfort",
+      "preferences": {
+        "min_budget": 800000,
+        "max_budget": 1200000,
+        "fuel_type": "Petrol",
+        "body_type": "MUV",
+        "transmission": "Automatic",
+        "seating": 8,
+        "features": [
+          "Ventilated Seats",
+          "Sunroof",
+          "Automatic Climate Control"
+        ],
+        "performance": 1
+      },
+      "questions": [
+        "Which car is most comfortable for long drives?",
+        "Which car should I choose and why?",
+        "How is the engine power comparison?"
+      ]
+    },
+    {
+      "id": 17,
+      "persona": "Budget-conscious first-time buyer",
+      "preferences": {
+        "min_budget": 2500000,
+        "max_budget": 4000000,
+        "fuel_type": "CNG",
+        "body_type": "Any",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "Automatic Climate Control"
+        ],
+        "performance": 1
+      },
+      "questions": [
+        "Which car offers best value for money?",
+        "What are the main differences between these cars?",
+        "Do these cars have Apple CarPlay?"
+      ]
+    },
+    {
+      "id": 18,
+      "persona": "Growing family with kids",
+      "preferences": {
+        "min_budget": 800000,
+        "max_budget": 1200000,
+        "fuel_type": "Petrol",
+        "body_type": "MUV",
+        "transmission": "Manual",
+        "seating": 7,
+        "features": [
+          "Lane Assist"
+        ],
+        "performance": 5
+      },
+      "questions": [
+        "What is the mileage of these cars?",
+        "Why is one car ranked higher than others?",
+        "Tell me about the safety ratings of these cars"
+      ]
+    },
+    {
+      "id": 19,
+      "persona": "Ride-sharing driver",
+      "preferences": {
+        "min_budget": 600000,
+        "max_budget": 1000000,
+        "fuel_type": "Diesel",
+        "body_type": "SUV",
+        "transmission": "Any",
+        "seating": 8,
+        "features": [
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 3
+      },
+      "questions": [
+        "Which car should I choose and why?",
+        "What are the main differences between these cars?",
+        "Which is the most affordable option?"
+      ]
+    },
+    {
+      "id": 20,
+      "persona": "Business executive",
+      "preferences": {
+        "min_budget": 1500000,
+        "max_budget": 2000000,
+        "fuel_type": "Petrol",
+        "body_type": "MUV",
+        "transmission": "Any",
+        "seating": 7,
+        "features": [
+          "Ventilated Seats"
+        ],
+        "performance": 9
+      },
+      "questions": [
+        "What are the main differences between these cars?",
+        "What are the pros and cons of each?",
+        "Which one is safest for family?"
+      ]
+    },
+    {
+      "id": 21,
+      "persona": "College student on tight budget",
+      "preferences": {
+        "min_budget": 800000,
+        "max_budget": 1200000,
+        "fuel_type": "Diesel",
+        "body_type": "Sedan",
+        "transmission": "Any",
+        "seating": 5,
+        "features": [
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 6
+      },
+      "questions": [
+        "Which has the best resale value?",
+        "Which car should I choose and why?",
+        "Which has the lowest service cost?"
+      ]
+    },
+    {
+      "id": 22,
+      "persona": "Long-distance highway driver",
+      "preferences": {
+        "min_budget": 1200000,
+        "max_budget": 1800000,
+        "fuel_type": "Any",
+        "body_type": "Sedan",
+        "transmission": "Automatic",
+        "seating": 8,
+        "features": [
+          "Automatic Climate Control"
+        ],
+        "performance": 5
+      },
+      "questions": [
+        "What is the mileage of these cars?",
+        "How do these cars compare overall?",
+        "Tell me about the driving experience"
+      ]
+    },
+    {
+      "id": 23,
+      "persona": "College student on tight budget",
+      "preferences": {
+        "min_budget": 2000000,
+        "max_budget": 3000000,
+        "fuel_type": "Petrol",
+        "body_type": "SUV",
+        "transmission": "Automatic",
+        "seating": 8,
+        "features": [
+          "Automatic Climate Control",
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 4
+      },
+      "questions": [
+        "Are there any hidden costs I should know?",
+        "What are the pros and cons of each?",
+        "Which car has the most technology features?"
+      ]
+    },
+    {
+      "id": 24,
+      "persona": "Senior citizen looking for comfort",
+      "preferences": {
+        "min_budget": 500000,
+        "max_budget": 800000,
+        "fuel_type": "Any",
+        "body_type": "Any",
+        "transmission": "Automatic",
+        "seating": 7,
+        "features": [
+          "Ventilated Seats",
+          "Sunroof",
+          "Automatic Climate Control"
+        ],
+        "performance": 7
+      },
+      "questions": [
+        "Which car is most comfortable for long drives?",
+        "Which car should I choose and why?",
+        "Which is most economical to run?"
+      ]
+    },
+    {
+      "id": 25,
+      "persona": "College student on tight budget",
+      "preferences": {
+        "min_budget": 800000,
+        "max_budget": 1200000,
+        "fuel_type": "Any",
+        "body_type": "Crossover",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "Automatic Climate Control"
+        ],
+        "performance": 9
+      },
+      "questions": [
+        "What is the price difference between these options?",
+        "What are the main differences between these cars?",
+        "How is the engine power comparison?"
+      ]
+    },
+    {
+      "id": 26,
+      "persona": "Status-conscious buyer",
+      "preferences": {
+        "min_budget": 1200000,
+        "max_budget": 1800000,
+        "fuel_type": "Electric",
+        "body_type": "SUV",
+        "transmission": "Automatic",
+        "seating": 7,
+        "features": [
+          "Ventilated Seats",
+          "Sunroof"
+        ],
+        "performance": 7
+      },
+      "questions": [
+        "How do these cars compare overall?",
+        "What are the pros and cons of each?",
+        "Which is most economical to run?"
+      ]
+    },
+    {
+      "id": 27,
+      "persona": "Eco-conscious buyer",
+      "preferences": {
+        "min_budget": 2500000,
+        "max_budget": 4000000,
+        "fuel_type": "Electric",
+        "body_type": "Crossover",
+        "transmission": "Manual",
+        "seating": 7,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "360 Camera"
+        ],
+        "performance": 1
+      },
+      "questions": [
+        "Which car has the best fuel efficiency?",
+        "What are the main differences between these cars?",
+        "How is the rear seat comfort?"
+      ]
+    },
+    {
+      "id": 28,
+      "persona": "Retired couple",
+      "preferences": {
+        "min_budget": 800000,
+        "max_budget": 1200000,
+        "fuel_type": "Hybrid",
+        "body_type": "Hatchback",
+        "transmission": "Any",
+        "seating": 8,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "Automatic Climate Control"
+        ],
+        "performance": 7
+      },
+      "questions": [
+        "What are the pros and cons of each?",
+        "Why is one car ranked higher than others?",
+        "Are spare parts easily available?"
+      ]
+    },
+    {
+      "id": 29,
+      "persona": "Practical daily commuter",
+      "preferences": {
+        "min_budget": 500000,
+        "max_budget": 800000,
+        "fuel_type": "Any",
+        "body_type": "Any",
+        "transmission": "Any",
+        "seating": 5,
+        "features": [
+          "360 Camera",
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 4
+      },
+      "questions": [
+        "Which car has the best fuel efficiency?",
+        "Which car should I choose and why?",
+        "Are spare parts easily available?"
+      ]
+    },
+    {
+      "id": 30,
+      "persona": "Adventure/off-road enthusiast",
+      "preferences": {
+        "min_budget": 1500000,
+        "max_budget": 2000000,
+        "fuel_type": "CNG",
+        "body_type": "Hatchback",
+        "transmission": "Manual",
+        "seating": 7,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "Lane Assist"
+        ],
+        "performance": 1
+      },
+      "questions": [
+        "What are the main differences between these cars?",
+        "Why is one car ranked higher than others?",
+        "What about the ride quality?"
+      ]
+    },
+    {
+      "id": 31,
+      "persona": "Ride-sharing driver",
+      "preferences": {
+        "min_budget": 1000000,
+        "max_budget": 1500000,
+        "fuel_type": "Hybrid",
+        "body_type": "SUV",
+        "transmission": "Automatic",
+        "seating": 7,
+        "features": [
+          "360 Camera"
+        ],
+        "performance": 8
+      },
+      "questions": [
+        "Why is one car ranked higher than others?",
+        "Why is one car ranked higher than others?",
+        "Which is most economical to run?"
+      ]
+    },
+    {
+      "id": 32,
+      "persona": "Long-distance highway driver",
+      "preferences": {
+        "min_budget": 1800000,
+        "max_budget": 2500000,
+        "fuel_type": "CNG",
+        "body_type": "MUV",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "Lane Assist"
+        ],
+        "performance": 5
+      },
+      "questions": [
+        "What is the mileage of these cars?",
+        "What are the pros and cons of each?",
+        "What is the warranty coverage?"
+      ]
+    },
+    {
+      "id": 33,
+      "persona": "Senior citizen looking for comfort",
+      "preferences": {
+        "min_budget": 600000,
+        "max_budget": 1000000,
+        "fuel_type": "Petrol",
+        "body_type": "SUV",
+        "transmission": "Any",
+        "seating": 7,
+        "features": [
+          "Sunroof",
+          "Automatic Climate Control",
+          "Ventilated Seats"
+        ],
+        "performance": 4
+      },
+      "questions": [
+        "What about the ride quality?",
+        "Why is one car ranked higher than others?",
+        "What safety features are included?"
+      ]
+    },
+    {
+      "id": 34,
+      "persona": "Luxury comfort seeker",
+      "preferences": {
+        "min_budget": 2500000,
+        "max_budget": 4000000,
+        "fuel_type": "Hybrid",
+        "body_type": "Hatchback",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "Sunroof"
+        ],
+        "performance": 8
+      },
+      "questions": [
+        "How is the rear seat comfort?",
+        "What are the main differences between these cars?",
+        "What features do these cars offer?"
+      ]
+    },
+    {
+      "id": 35,
+      "persona": "Ride-sharing driver",
+      "preferences": {
+        "min_budget": 1800000,
+        "max_budget": 2500000,
+        "fuel_type": "Petrol",
+        "body_type": "Sedan",
+        "transmission": "Manual",
+        "seating": 7,
+        "features": [
+          "Ventilated Seats"
+        ],
+        "performance": 4
+      },
+      "questions": [
+        "Why is one car ranked higher than others?",
+        "What are the pros and cons of each?",
+        "What is the price difference between these options?"
+      ]
+    },
+    {
+      "id": 36,
+      "persona": "Luxury comfort seeker",
+      "preferences": {
+        "min_budget": 700000,
+        "max_budget": 1400000,
+        "fuel_type": "CNG",
+        "body_type": "Crossover",
+        "transmission": "Any",
+        "seating": 5,
+        "features": [
+          "360 Camera"
+        ],
+        "performance": 3
+      },
+      "questions": [
+        "Which car is most comfortable for long drives?",
+        "What are the pros and cons of each?",
+        "What safety features are included?"
+      ]
+    },
+    {
+      "id": 37,
+      "persona": "Safety-focused family person",
+      "preferences": {
+        "min_budget": 700000,
+        "max_budget": 1400000,
+        "fuel_type": "Hybrid",
+        "body_type": "MUV",
+        "transmission": "Any",
+        "seating": 8,
+        "features": [
+          "Lane Assist"
+        ],
+        "performance": 6
+      },
+      "questions": [
+        "How many airbags do these cars have?",
+        "Which car should I choose and why?",
+        "What is the warranty coverage?"
+      ]
+    },
+    {
+      "id": 38,
+      "persona": "Status-conscious buyer",
+      "preferences": {
+        "min_budget": 2500000,
+        "max_budget": 4000000,
+        "fuel_type": "Diesel",
+        "body_type": "SUV",
+        "transmission": "Any",
+        "seating": 5,
+        "features": [
+          "Sunroof",
+          "Ventilated Seats"
+        ],
+        "performance": 2
+      },
+      "questions": [
+        "Do these cars have Apple CarPlay?",
+        "Which car should I choose and why?",
+        "Are spare parts easily available?"
+      ]
+    },
+    {
+      "id": 39,
+      "persona": "Practical daily commuter",
+      "preferences": {
+        "min_budget": 800000,
+        "max_budget": 1200000,
+        "fuel_type": "Diesel",
+        "body_type": "Sedan",
+        "transmission": "Any",
+        "seating": 5,
+        "features": [
+          "360 Camera",
+          "Automatic Climate Control",
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 7
+      },
+      "questions": [
+        "Which car has the most technology features?",
+        "How do these cars compare overall?",
+        "Which is most economical to run?"
+      ]
+    },
+    {
+      "id": 40,
+      "persona": "Adventure/off-road enthusiast",
+      "preferences": {
+        "min_budget": 2500000,
+        "max_budget": 4000000,
+        "fuel_type": "Diesel",
+        "body_type": "MUV",
+        "transmission": "Any",
+        "seating": 7,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "Lane Assist"
+        ],
+        "performance": 2
+      },
+      "questions": [
+        "What are the pros and cons of each?",
+        "Which car should I choose and why?",
+        "What about the ride quality?"
+      ]
+    },
+    {
+      "id": 41,
+      "persona": "College student on tight budget",
+      "preferences": {
+        "min_budget": 1000000,
+        "max_budget": 1500000,
+        "fuel_type": "Hybrid",
+        "body_type": "Sedan",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "Automatic Climate Control"
+        ],
+        "performance": 4
+      },
+      "questions": [
+        "Which has the best resale value?",
+        "What are the main differences between these cars?",
+        "Compare the fuel economy of these options"
+      ]
+    },
+    {
+      "id": 42,
+      "persona": "Weekend road-tripper",
+      "preferences": {
+        "min_budget": 1500000,
+        "max_budget": 2000000,
+        "fuel_type": "Electric",
+        "body_type": "Hatchback",
+        "transmission": "Automatic",
+        "seating": 8,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "Automatic Climate Control"
+        ],
+        "performance": 8
+      },
+      "questions": [
+        "Compare the fuel economy of these options",
+        "Why is one car ranked higher than others?",
+        "Which is the most affordable option?"
+      ]
+    },
+    {
+      "id": 43,
+      "persona": "Weekend road-tripper",
+      "preferences": {
+        "min_budget": 500000,
+        "max_budget": 800000,
+        "fuel_type": "Any",
+        "body_type": "SUV",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "Wireless Charging",
+          "360 Camera"
+        ],
+        "performance": 7
+      },
+      "questions": [
+        "Compare the fuel economy of these options",
+        "What are the main differences between these cars?",
+        "Are there any hidden costs I should know?"
+      ]
+    },
+    {
+      "id": 44,
+      "persona": "Safety-focused family person",
+      "preferences": {
+        "min_budget": 500000,
+        "max_budget": 800000,
+        "fuel_type": "CNG",
+        "body_type": "SUV",
+        "transmission": "Manual",
+        "seating": 5,
+        "features": [
+          "Lane Assist"
+        ],
+        "performance": 3
+      },
+      "questions": [
+        "How many airbags do these cars have?",
+        "What are the main differences between these cars?",
+        "Which is the most affordable option?"
+      ]
+    },
+    {
+      "id": 45,
+      "persona": "Safety-focused family person",
+      "preferences": {
+        "min_budget": 2000000,
+        "max_budget": 3000000,
+        "fuel_type": "CNG",
+        "body_type": "Hatchback",
+        "transmission": "Any",
+        "seating": 8,
+        "features": [
+          "Lane Assist",
+          "360 Camera"
+        ],
+        "performance": 6
+      },
+      "questions": [
+        "Tell me about the safety ratings of these cars",
+        "What are the pros and cons of each?",
+        "Tell me about the driving experience"
+      ]
+    },
+    {
+      "id": 46,
+      "persona": "Status-conscious buyer",
+      "preferences": {
+        "min_budget": 500000,
+        "max_budget": 800000,
+        "fuel_type": "CNG",
+        "body_type": "Sedan",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 9
+      },
+      "questions": [
+        "Which is most economical to run?",
+        "Why is one car ranked higher than others?",
+        "Tell me about the safety ratings of these cars"
+      ]
+    },
+    {
+      "id": 47,
+      "persona": "Budget-conscious first-time buyer",
+      "preferences": {
+        "min_budget": 1000000,
+        "max_budget": 1500000,
+        "fuel_type": "CNG",
+        "body_type": "MUV",
+        "transmission": "Manual",
+        "seating": 7,
+        "features": [
+          "Automatic Climate Control",
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 1
+      },
+      "questions": [
+        "Are there any hidden costs I should know?",
+        "Why is one car ranked higher than others?",
+        "What is the warranty coverage?"
+      ]
+    },
+    {
+      "id": 48,
+      "persona": "Luxury comfort seeker",
+      "preferences": {
+        "min_budget": 700000,
+        "max_budget": 1400000,
+        "fuel_type": "Hybrid",
+        "body_type": "MUV",
+        "transmission": "Automatic",
+        "seating": 5,
+        "features": [
+          "Wireless Charging"
+        ],
+        "performance": 7
+      },
+      "questions": [
+        "Which has the most spacious interior?",
+        "How do these cars compare overall?",
+        "What is the mileage of these cars?"
+      ]
+    },
+    {
+      "id": 49,
+      "persona": "City driver with parking concerns",
+      "preferences": {
+        "min_budget": 600000,
+        "max_budget": 1000000,
+        "fuel_type": "Diesel",
+        "body_type": "SUV",
+        "transmission": "Manual",
+        "seating": 7,
+        "features": [
+          "360 Camera",
+          "Apple CarPlay/Android Auto",
+          "Automatic Climate Control"
+        ],
+        "performance": 9
+      },
+      "questions": [
+        "What are the main differences between these cars?",
+        "Why is one car ranked higher than others?",
+        "Which has the best resale value?"
+      ]
+    },
+    {
+      "id": 50,
+      "persona": "Performance enthusiast",
+      "preferences": {
+        "min_budget": 1800000,
+        "max_budget": 2500000,
+        "fuel_type": "Petrol",
+        "body_type": "MUV",
+        "transmission": "Automatic",
+        "seating": 7,
+        "features": [
+          "Lane Assist",
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 2
+      },
+      "questions": [
+        "Tell me about the driving experience",
+        "Which car should I choose and why?",
+        "Which is most economical to run?"
+      ]
+    },
+    {
+      "id": 51,
+      "persona": "Retired couple",
+      "preferences": {
+        "min_budget": 800000,
+        "max_budget": 1200000,
+        "fuel_type": "Hybrid",
+        "body_type": "Sedan",
+        "transmission": "Manual",
+        "seating": 7,
+        "features": [
+          "Lane Assist"
+        ],
+        "performance": 4
+      },
+      "questions": [
+        "Which car has the most technology features?",
+        "What are the pros and cons of each?",
+        "What safety features are included?"
+      ]
+    },
+    {
+      "id": 52,
+      "persona": "College student on tight budget",
+      "preferences": {
+        "min_budget": 500000,
+        "max_budget": 800000,
+        "fuel_type": "Diesel",
+        "body_type": "Any",
+        "transmission": "Any",
+        "seating": 7,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "Automatic Climate Control"
+        ],
+        "performance": 1
+      },
+      "questions": [
+        "Are there any hidden costs I should know?",
+        "Which car should I choose and why?",
+        "Which car has the best performance?"
+      ]
+    },
+    {
+      "id": 53,
+      "persona": "Eco-conscious buyer",
+      "preferences": {
+        "min_budget": 700000,
+        "max_budget": 1400000,
+        "fuel_type": "Diesel",
+        "body_type": "Crossover",
+        "transmission": "Manual",
+        "seating": 5,
+        "features": [
+          "Automatic Climate Control",
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 1
+      },
+      "questions": [
+        "What are the pros and cons of each?",
+        "How do these cars compare overall?",
+        "How is the engine power comparison?"
+      ]
+    },
+    {
+      "id": 54,
+      "persona": "Young professional",
+      "preferences": {
+        "min_budget": 1000000,
+        "max_budget": 1500000,
+        "fuel_type": "Diesel",
+        "body_type": "SUV",
+        "transmission": "Manual",
+        "seating": 7,
+        "features": [
+          "Sunroof"
+        ],
+        "performance": 9
+      },
+      "questions": [
+        "Why is one car ranked higher than others?",
+        "What are the pros and cons of each?",
+        "What is the mileage of these cars?"
+      ]
+    },
+    {
+      "id": 55,
+      "persona": "Status-conscious buyer",
+      "preferences": {
+        "min_budget": 500000,
+        "max_budget": 800000,
+        "fuel_type": "CNG",
+        "body_type": "Crossover",
+        "transmission": "Manual",
+        "seating": 7,
+        "features": [
+          "Automatic Climate Control"
+        ],
+        "performance": 4
+      },
+      "questions": [
+        "What are the main differences between these cars?",
+        "What are the main differences between these cars?",
+        "Which has the lowest service cost?"
+      ]
+    },
+    {
+      "id": 56,
+      "persona": "Resale value focused buyer",
+      "preferences": {
+        "min_budget": 2000000,
+        "max_budget": 3000000,
+        "fuel_type": "Diesel",
+        "body_type": "Any",
+        "transmission": "Manual",
+        "seating": 5,
+        "features": [
+          "Automatic Climate Control"
+        ],
+        "performance": 5
+      },
+      "questions": [
+        "Which car has the most technology features?",
+        "Why is one car ranked higher than others?",
+        "How is the rear seat comfort?"
+      ]
+    },
+    {
+      "id": 57,
+      "persona": "Status-conscious buyer",
+      "preferences": {
+        "min_budget": 800000,
+        "max_budget": 1200000,
+        "fuel_type": "Hybrid",
+        "body_type": "Sedan",
+        "transmission": "Any",
+        "seating": 7,
+        "features": [
+          "Automatic Climate Control"
+        ],
+        "performance": 8
+      },
+      "questions": [
+        "Why is one car ranked higher than others?",
+        "Which car should I choose and why?",
+        "Which car has the best fuel efficiency?"
+      ]
+    },
+    {
+      "id": 58,
+      "persona": "Safety-focused family person",
+      "preferences": {
+        "min_budget": 600000,
+        "max_budget": 1000000,
+        "fuel_type": "Any",
+        "body_type": "MUV",
+        "transmission": "Manual",
+        "seating": 5,
+        "features": [
+          "Lane Assist",
+          "360 Camera"
+        ],
+        "performance": 7
+      },
+      "questions": [
+        "Tell me about the safety ratings of these cars",
+        "Which car should I choose and why?",
+        "What is the mileage of these cars?"
+      ]
+    },
+    {
+      "id": 59,
+      "persona": "Young professional",
+      "preferences": {
+        "min_budget": 1000000,
+        "max_budget": 1500000,
+        "fuel_type": "CNG",
+        "body_type": "Any",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "360 Camera"
+        ],
+        "performance": 1
+      },
+      "questions": [
+        "What comfort features are available?",
+        "What are the pros and cons of each?",
+        "How reliable are these cars?"
+      ]
+    },
+    {
+      "id": 60,
+      "persona": "College student on tight budget",
+      "preferences": {
+        "min_budget": 2500000,
+        "max_budget": 4000000,
+        "fuel_type": "Any",
+        "body_type": "MUV",
+        "transmission": "Any",
+        "seating": 5,
+        "features": [
+          "Automatic Climate Control",
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 9
+      },
+      "questions": [
+        "Are there any hidden costs I should know?",
+        "How do these cars compare overall?",
+        "What are the maintenance costs?"
+      ]
+    },
+    {
+      "id": 61,
+      "persona": "Ride-sharing driver",
+      "preferences": {
+        "min_budget": 1500000,
+        "max_budget": 2000000,
+        "fuel_type": "Any",
+        "body_type": "Any",
+        "transmission": "Manual",
+        "seating": 7,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "Automatic Climate Control",
+          "360 Camera"
+        ],
+        "performance": 6
+      },
+      "questions": [
+        "What comfort features are available?",
+        "What are the pros and cons of each?",
+        "Which has the best resale value?"
+      ]
+    },
+    {
+      "id": 62,
+      "persona": "Adventure/off-road enthusiast",
+      "preferences": {
+        "min_budget": 800000,
+        "max_budget": 1200000,
+        "fuel_type": "Any",
+        "body_type": "Hatchback",
+        "transmission": "Automatic",
+        "seating": 8,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "Lane Assist"
+        ],
+        "performance": 10
+      },
+      "questions": [
+        "How do these cars compare overall?",
+        "How do these cars compare overall?",
+        "Are spare parts easily available?"
+      ]
+    },
+    {
+      "id": 63,
+      "persona": "Budget-conscious first-time buyer",
+      "preferences": {
+        "min_budget": 2500000,
+        "max_budget": 4000000,
+        "fuel_type": "Electric",
+        "body_type": "MUV",
+        "transmission": "Automatic",
+        "seating": 7,
+        "features": [
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 6
+      },
+      "questions": [
+        "Are there any hidden costs I should know?",
+        "Why is one car ranked higher than others?",
+        "Which has the most spacious interior?"
+      ]
+    },
+    {
+      "id": 64,
+      "persona": "Tech-savvy millennial",
+      "preferences": {
+        "min_budget": 700000,
+        "max_budget": 1400000,
+        "fuel_type": "Hybrid",
+        "body_type": "Crossover",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "360 Camera",
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 2
+      },
+      "questions": [
+        "What are the main differences between these cars?",
+        "What are the main differences between these cars?",
+        "Which car has the best safety features?"
+      ]
+    },
+    {
+      "id": 65,
+      "persona": "Senior citizen looking for comfort",
+      "preferences": {
+        "min_budget": 800000,
+        "max_budget": 1200000,
+        "fuel_type": "Petrol",
+        "body_type": "Hatchback",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "Sunroof"
+        ],
+        "performance": 9
+      },
+      "questions": [
+        "Which has the most spacious interior?",
+        "How do these cars compare overall?",
+        "Which car has the best safety features?"
+      ]
+    },
+    {
+      "id": 66,
+      "persona": "Luxury comfort seeker",
+      "preferences": {
+        "min_budget": 1500000,
+        "max_budget": 2000000,
+        "fuel_type": "Hybrid",
+        "body_type": "Sedan",
+        "transmission": "Manual",
+        "seating": 5,
+        "features": [
+          "Sunroof",
+          "360 Camera"
+        ],
+        "performance": 3
+      },
+      "questions": [
+        "What about the ride quality?",
+        "What are the main differences between these cars?",
+        "What is the mileage of these cars?"
+      ]
+    },
+    {
+      "id": 67,
+      "persona": "Safety-focused family person",
+      "preferences": {
+        "min_budget": 2500000,
+        "max_budget": 4000000,
+        "fuel_type": "CNG",
+        "body_type": "MUV",
+        "transmission": "Automatic",
+        "seating": 5,
+        "features": [
+          "Lane Assist"
+        ],
+        "performance": 6
+      },
+      "questions": [
+        "Tell me about the safety ratings of these cars",
+        "What are the pros and cons of each?",
+        "How much will I spend on fuel monthly?"
+      ]
+    },
+    {
+      "id": 68,
+      "persona": "Budget-conscious first-time buyer",
+      "preferences": {
+        "min_budget": 800000,
+        "max_budget": 1200000,
+        "fuel_type": "Diesel",
+        "body_type": "Any",
+        "transmission": "Automatic",
+        "seating": 5,
+        "features": [
+          "Automatic Climate Control",
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 5
+      },
+      "questions": [
+        "Which car offers best value for money?",
+        "What are the pros and cons of each?",
+        "What is the mileage of these cars?"
+      ]
+    },
+    {
+      "id": 69,
+      "persona": "Growing family with kids",
+      "preferences": {
+        "min_budget": 1800000,
+        "max_budget": 2500000,
+        "fuel_type": "Diesel",
+        "body_type": "MUV",
+        "transmission": "Any",
+        "seating": 7,
+        "features": [
+          "Lane Assist",
+          "360 Camera"
+        ],
+        "performance": 7
+      },
+      "questions": [
+        "Why is one car ranked higher than others?",
+        "How do these cars compare overall?",
+        "What is the price difference between these options?"
+      ]
+    },
+    {
+      "id": 70,
+      "persona": "Practical daily commuter",
+      "preferences": {
+        "min_budget": 1200000,
+        "max_budget": 1800000,
+        "fuel_type": "Hybrid",
+        "body_type": "Sedan",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "Automatic Climate Control",
+          "Ventilated Seats"
+        ],
+        "performance": 5
+      },
+      "questions": [
+        "How do these cars compare overall?",
+        "What are the pros and cons of each?",
+        "Which has the most spacious interior?"
+      ]
+    },
+    {
+      "id": 71,
+      "persona": "Safety-focused family person",
+      "preferences": {
+        "min_budget": 1800000,
+        "max_budget": 2500000,
+        "fuel_type": "Electric",
+        "body_type": "Sedan",
+        "transmission": "Automatic",
+        "seating": 8,
+        "features": [
+          "Lane Assist",
+          "360 Camera"
+        ],
+        "performance": 5
+      },
+      "questions": [
+        "What safety features are included?",
+        "Why is one car ranked higher than others?",
+        "Which car is most comfortable for long drives?"
+      ]
+    },
+    {
+      "id": 72,
+      "persona": "Performance enthusiast",
+      "preferences": {
+        "min_budget": 1200000,
+        "max_budget": 1800000,
+        "fuel_type": "Any",
+        "body_type": "Hatchback",
+        "transmission": "Any",
+        "seating": 8,
+        "features": [
+          "Lane Assist"
+        ],
+        "performance": 4
+      },
+      "questions": [
+        "Tell me about the driving experience",
+        "What are the pros and cons of each?",
+        "What safety features are included?"
+      ]
+    },
+    {
+      "id": 73,
+      "persona": "Senior citizen looking for comfort",
+      "preferences": {
+        "min_budget": 700000,
+        "max_budget": 1400000,
+        "fuel_type": "Diesel",
+        "body_type": "Any",
+        "transmission": "Automatic",
+        "seating": 5,
+        "features": [
+          "Automatic Climate Control",
+          "Sunroof",
+          "Ventilated Seats"
+        ],
+        "performance": 5
+      },
+      "questions": [
+        "What about the ride quality?",
+        "What are the pros and cons of each?",
+        "How is the engine power comparison?"
+      ]
+    },
+    {
+      "id": 74,
+      "persona": "Long-distance highway driver",
+      "preferences": {
+        "min_budget": 1200000,
+        "max_budget": 1800000,
+        "fuel_type": "Diesel",
+        "body_type": "Crossover",
+        "transmission": "Manual",
+        "seating": 5,
+        "features": [
+          "Lane Assist",
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 4
+      },
+      "questions": [
+        "Which car has the best fuel efficiency?",
+        "How do these cars compare overall?",
+        "What are the maintenance costs?"
+      ]
+    },
+    {
+      "id": 75,
+      "persona": "Tech-savvy millennial",
+      "preferences": {
+        "min_budget": 2500000,
+        "max_budget": 4000000,
+        "fuel_type": "CNG",
+        "body_type": "Any",
+        "transmission": "Manual",
+        "seating": 5,
+        "features": [
+          "360 Camera",
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 2
+      },
+      "questions": [
+        "Tell me about the infotainment system",
+        "Why is one car ranked higher than others?",
+        "Which is most economical to run?"
+      ]
+    },
+    {
+      "id": 76,
+      "persona": "Young professional",
+      "preferences": {
+        "min_budget": 500000,
+        "max_budget": 800000,
+        "fuel_type": "CNG",
+        "body_type": "Crossover",
+        "transmission": "Manual",
+        "seating": 7,
+        "features": [
+          "Automatic Climate Control",
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 8
+      },
+      "questions": [
+        "Why is one car ranked higher than others?",
+        "How do these cars compare overall?",
+        "What about the ride quality?"
+      ]
+    },
+    {
+      "id": 77,
+      "persona": "Eco-conscious buyer",
+      "preferences": {
+        "min_budget": 600000,
+        "max_budget": 1000000,
+        "fuel_type": "Electric",
+        "body_type": "Hatchback",
+        "transmission": "Manual",
+        "seating": 7,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "Lane Assist"
+        ],
+        "performance": 9
+      },
+      "questions": [
+        "Compare the fuel economy of these options",
+        "Which car should I choose and why?",
+        "Which has the lowest service cost?"
+      ]
+    },
+    {
+      "id": 78,
+      "persona": "Long-distance highway driver",
+      "preferences": {
+        "min_budget": 800000,
+        "max_budget": 1200000,
+        "fuel_type": "CNG",
+        "body_type": "Crossover",
+        "transmission": "Any",
+        "seating": 7,
+        "features": [
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 4
+      },
+      "questions": [
+        "What is the mileage of these cars?",
+        "What are the pros and cons of each?",
+        "What comfort features are available?"
+      ]
+    },
+    {
+      "id": 79,
+      "persona": "Ride-sharing driver",
+      "preferences": {
+        "min_budget": 800000,
+        "max_budget": 1200000,
+        "fuel_type": "Any",
+        "body_type": "MUV",
+        "transmission": "Any",
+        "seating": 5,
+        "features": [
+          "Sunroof"
+        ],
+        "performance": 1
+      },
+      "questions": [
+        "What features do these cars offer?",
+        "How do these cars compare overall?",
+        "Which car offers best value for money?"
+      ]
+    },
+    {
+      "id": 80,
+      "persona": "Young professional",
+      "preferences": {
+        "min_budget": 500000,
+        "max_budget": 800000,
+        "fuel_type": "Electric",
+        "body_type": "SUV",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "Lane Assist"
+        ],
+        "performance": 7
+      },
+      "questions": [
+        "Which car has the most technology features?",
+        "What are the pros and cons of each?",
+        "Tell me about the safety ratings of these cars"
+      ]
+    },
+    {
+      "id": 81,
+      "persona": "Tech-savvy millennial",
+      "preferences": {
+        "min_budget": 1000000,
+        "max_budget": 1500000,
+        "fuel_type": "Diesel",
+        "body_type": "SUV",
+        "transmission": "Automatic",
+        "seating": 5,
+        "features": [
+          "Wireless Charging",
+          "360 Camera",
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 8
+      },
+      "questions": [
+        "Tell me about the infotainment system",
+        "Which car should I choose and why?",
+        "Which car is most comfortable for long drives?"
+      ]
+    },
+    {
+      "id": 82,
+      "persona": "Budget-conscious first-time buyer",
+      "preferences": {
+        "min_budget": 1500000,
+        "max_budget": 2000000,
+        "fuel_type": "Hybrid",
+        "body_type": "SUV",
+        "transmission": "Any",
+        "seating": 5,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "Automatic Climate Control"
+        ],
+        "performance": 5
+      },
+      "questions": [
+        "What is the price difference between these options?",
+        "How do these cars compare overall?",
+        "Which car is most comfortable for long drives?"
+      ]
+    },
+    {
+      "id": 83,
+      "persona": "Tech-savvy millennial",
+      "preferences": {
+        "min_budget": 1500000,
+        "max_budget": 2000000,
+        "fuel_type": "Electric",
+        "body_type": "Any",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "Wireless Charging",
+          "360 Camera"
+        ],
+        "performance": 8
+      },
+      "questions": [
+        "How do these cars compare overall?",
+        "Which car should I choose and why?",
+        "Which one is safest for family?"
+      ]
+    },
+    {
+      "id": 84,
+      "persona": "College student on tight budget",
+      "preferences": {
+        "min_budget": 1500000,
+        "max_budget": 2000000,
+        "fuel_type": "Any",
+        "body_type": "Sedan",
+        "transmission": "Automatic",
+        "seating": 7,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "Automatic Climate Control"
+        ],
+        "performance": 9
+      },
+      "questions": [
+        "Are there any hidden costs I should know?",
+        "What are the pros and cons of each?",
+        "Which has the most spacious interior?"
+      ]
+    },
+    {
+      "id": 85,
+      "persona": "Tech-savvy millennial",
+      "preferences": {
+        "min_budget": 500000,
+        "max_budget": 800000,
+        "fuel_type": "Electric",
+        "body_type": "MUV",
+        "transmission": "Any",
+        "seating": 5,
+        "features": [
+          "360 Camera",
+          "Wireless Charging"
+        ],
+        "performance": 1
+      },
+      "questions": [
+        "How much will I spend on fuel monthly?",
+        "How do these cars compare overall?",
+        "Are there any hidden costs I should know?"
+      ]
+    },
+    {
+      "id": 86,
+      "persona": "Budget-conscious first-time buyer",
+      "preferences": {
+        "min_budget": 1500000,
+        "max_budget": 2000000,
+        "fuel_type": "CNG",
+        "body_type": "Any",
+        "transmission": "Manual",
+        "seating": 5,
+        "features": [
+          "Automatic Climate Control"
+        ],
+        "performance": 7
+      },
+      "questions": [
+        "What is the price difference between these options?",
+        "What are the main differences between these cars?",
+        "Tell me about the infotainment system"
+      ]
+    },
+    {
+      "id": 87,
+      "persona": "College student on tight budget",
+      "preferences": {
+        "min_budget": 1500000,
+        "max_budget": 2000000,
+        "fuel_type": "CNG",
+        "body_type": "Hatchback",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "Automatic Climate Control"
+        ],
+        "performance": 1
+      },
+      "questions": [
+        "What is the price difference between these options?",
+        "What are the main differences between these cars?",
+        "What is the warranty coverage?"
+      ]
+    },
+    {
+      "id": 88,
+      "persona": "Adventure/off-road enthusiast",
+      "preferences": {
+        "min_budget": 1800000,
+        "max_budget": 2500000,
+        "fuel_type": "Electric",
+        "body_type": "Crossover",
+        "transmission": "Automatic",
+        "seating": 7,
+        "features": [
+          "Lane Assist"
+        ],
+        "performance": 1
+      },
+      "questions": [
+        "What are the pros and cons of each?",
+        "What are the main differences between these cars?",
+        "What are the maintenance costs?"
+      ]
+    },
+    {
+      "id": 89,
+      "persona": "Resale value focused buyer",
+      "preferences": {
+        "min_budget": 700000,
+        "max_budget": 1400000,
+        "fuel_type": "Petrol",
+        "body_type": "Crossover",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "Wireless Charging"
+        ],
+        "performance": 3
+      },
+      "questions": [
+        "How much will I spend on fuel monthly?",
+        "What are the main differences between these cars?",
+        "Tell me about the safety ratings of these cars"
+      ]
+    },
+    {
+      "id": 90,
+      "persona": "Resale value focused buyer",
+      "preferences": {
+        "min_budget": 1200000,
+        "max_budget": 1800000,
+        "fuel_type": "Petrol",
+        "body_type": "MUV",
+        "transmission": "Any",
+        "seating": 5,
+        "features": [
+          "Automatic Climate Control",
+          "Apple CarPlay/Android Auto",
+          "360 Camera"
+        ],
+        "performance": 1
+      },
+      "questions": [
+        "Tell me about the infotainment system",
+        "Why is one car ranked higher than others?",
+        "Tell me about the suspension quality"
+      ]
+    },
+    {
+      "id": 91,
+      "persona": "Long-distance highway driver",
+      "preferences": {
+        "min_budget": 2000000,
+        "max_budget": 3000000,
+        "fuel_type": "Any",
+        "body_type": "Hatchback",
+        "transmission": "Manual",
+        "seating": 7,
+        "features": [
+          "Automatic Climate Control",
+          "Sunroof"
+        ],
+        "performance": 4
+      },
+      "questions": [
+        "Tell me about the infotainment system",
+        "What are the main differences between these cars?",
+        "Which car is most comfortable for long drives?"
+      ]
+    },
+    {
+      "id": 92,
+      "persona": "Tech-savvy millennial",
+      "preferences": {
+        "min_budget": 1000000,
+        "max_budget": 1500000,
+        "fuel_type": "CNG",
+        "body_type": "Sedan",
+        "transmission": "Any",
+        "seating": 7,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "360 Camera",
+          "Wireless Charging"
+        ],
+        "performance": 3
+      },
+      "questions": [
+        "What are the pros and cons of each?",
+        "Which car should I choose and why?",
+        "Do these cars have Apple CarPlay?"
+      ]
+    },
+    {
+      "id": 93,
+      "persona": "Budget-conscious first-time buyer",
+      "preferences": {
+        "min_budget": 1200000,
+        "max_budget": 1800000,
+        "fuel_type": "Any",
+        "body_type": "Crossover",
+        "transmission": "Automatic",
+        "seating": 8,
+        "features": [
+          "Apple CarPlay/Android Auto"
+        ],
+        "performance": 9
+      },
+      "questions": [
+        "Are there any hidden costs I should know?",
+        "How do these cars compare overall?",
+        "Tell me about the driving experience"
+      ]
+    },
+    {
+      "id": 94,
+      "persona": "Weekend road-tripper",
+      "preferences": {
+        "min_budget": 700000,
+        "max_budget": 1400000,
+        "fuel_type": "Any",
+        "body_type": "SUV",
+        "transmission": "Manual",
+        "seating": 8,
+        "features": [
+          "Lane Assist",
+          "360 Camera"
+        ],
+        "performance": 8
+      },
+      "questions": [
+        "Which car has the most technology features?",
+        "Why is one car ranked higher than others?",
+        "Tell me about the safety ratings of these cars"
+      ]
+    },
+    {
+      "id": 95,
+      "persona": "Ride-sharing driver",
+      "preferences": {
+        "min_budget": 1500000,
+        "max_budget": 2000000,
+        "fuel_type": "Petrol",
+        "body_type": "Hatchback",
+        "transmission": "Automatic",
+        "seating": 8,
+        "features": [
+          "Automatic Climate Control"
+        ],
+        "performance": 6
+      },
+      "questions": [
+        "Which car should I choose and why?",
+        "What are the pros and cons of each?",
+        "Which car has the most technology features?"
+      ]
+    },
+    {
+      "id": 96,
+      "persona": "Performance enthusiast",
+      "preferences": {
+        "min_budget": 500000,
+        "max_budget": 800000,
+        "fuel_type": "Diesel",
+        "body_type": "Hatchback",
+        "transmission": "Automatic",
+        "seating": 8,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "Lane Assist"
+        ],
+        "performance": 9
+      },
+      "questions": [
+        "Tell me about the driving experience",
+        "Why is one car ranked higher than others?",
+        "Tell me about the suspension quality"
+      ]
+    },
+    {
+      "id": 97,
+      "persona": "College student on tight budget",
+      "preferences": {
+        "min_budget": 2000000,
+        "max_budget": 3000000,
+        "fuel_type": "CNG",
+        "body_type": "SUV",
+        "transmission": "Automatic",
+        "seating": 8,
+        "features": [
+          "Apple CarPlay/Android Auto",
+          "Automatic Climate Control"
+        ],
+        "performance": 7
+      },
+      "questions": [
+        "Are there any hidden costs I should know?",
+        "Which car should I choose and why?",
+        "Tell me about the suspension quality"
+      ]
+    },
+    {
+      "id": 98,
+      "persona": "Safety-focused family person",
+      "preferences": {
+        "min_budget": 1200000,
+        "max_budget": 1800000,
+        "fuel_type": "CNG",
+        "body_type": "MUV",
+        "transmission": "Any",
+        "seating": 7,
+        "features": [
+          "Lane Assist"
+        ],
+        "performance": 7
+      },
+      "questions": [
+        "How many airbags do these cars have?",
+        "How do these cars compare overall?",
+        "Which car has the most technology features?"
+      ]
+    },
+    {
+      "id": 99,
+      "persona": "Young professional",
+      "preferences": {
+        "min_budget": 600000,
+        "max_budget": 1000000,
+        "fuel_type": "Electric",
+        "body_type": "MUV",
+        "transmission": "Automatic",
+        "seating": 8,
+        "features": [
+          "Automatic Climate Control",
+          "Apple CarPlay/Android Auto",
+          "360 Camera"
+        ],
+        "performance": 9
+      },
+      "questions": [
+        "Do these cars have Apple CarPlay?",
+        "Why is one car ranked higher than others?",
+        "Which car offers best value for money?"
+      ]
+    },
+    {
+      "id": 100,
+      "persona": "Senior citizen looking for comfort",
+      "preferences": {
+        "min_budget": 800000,
+        "max_budget": 1200000,
+        "fuel_type": "Electric",
+        "body_type": "Hatchback",
+        "transmission": "Automatic",
+        "seating": 8,
+        "features": [
+          "Sunroof",
+          "Automatic Climate Control"
+        ],
+        "performance": 9
+      },
+      "questions": [
+        "How is the rear seat comfort?",
+        "What are the main differences between these cars?",
+        "Which car has the best fuel efficiency?"
+      ]
+    }
+  ]
+}
